@@ -1,0 +1,131 @@
+// 币币订单->订单
+.bb_order_wrapper {
+	background:@wrapGrayColor;
+	.order_container {
+		// .main();
+		/// padding-top: 20px;
+		// background: none;
+		.public_wrapper();
+		.content {
+			position:relative;
+			min-height: 600px;
+			//  动画效果
+			.green {
+				color:@Successcolor;
+			}
+			.red {
+				color:@redColor;
+			}
+			.nowDeal {
+				.el-table__expanded-cell {
+					padding:20px 52px;
+					.drop_down {
+						display:flex;
+						justify-content: flex-start;
+						.el-form-item {
+							width: 15%;
+							margin-right:0;
+							&:first-child {
+								width: 16%;
+							}
+							.el-form-item__label {
+								text-align:left;
+							}
+							.el-form-item__content {
+								display:block;
+							}
+						}
+					}
+				}
+			}
+			.historyWt {
+				.el-table__expanded-cell {
+					padding:20px 0 20px 48px;
+					.drop_down {
+						display:flex;
+						justify-content: space-between;
+						.el-form-item {
+							width: 16%;
+							margin-right:0;
+							&:first-child {
+								width: 18%;
+							}
+							.el-form-item__label {
+								text-align:left;
+							}
+							.el-form-item__content {
+								display:block;
+							}
+						}
+					}
+				}
+			}
+			#pane-first .el-table{
+				th:nth-of-type(8) {
+					text-align: center;
+				}
+			}
+			#pane-second {
+				.el-table:last-child {
+					th:nth-of-type(7) {
+						text-align: center;
+					}
+				}
+
+			}
+			.el-table__row {
+				td:last-child{
+					text-align: center;
+				}
+			}
+			.el-form-item {
+				margin-bottom: 0;
+			}
+			.right {
+				position: absolute;
+				right:20px;
+				top: 20px;
+				font-size:@h4FontSize;
+				.bitType {
+					display:inline-block;
+					background:@wrapGrayColor;
+					border:1px solid @cunColor;
+					padding:9px 10px;
+					padding-right: 30px;
+					color:@cunColor;
+					border-radius:4px;
+					margin-right: 5px;
+				}
+				.el-input__inner {
+					width: 120px;
+					height:34px;
+					line-height:34px;
+					background:@wrapGrayColor;
+					border:1px solid @cunColor;
+					margin-left: 5px;
+				}
+				.el-button{
+					height:34px;
+					line-height:34px;
+					padding:0 20px;
+					vertical-align: middle;
+					
+				}
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

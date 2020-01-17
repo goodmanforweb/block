@@ -1,0 +1,166 @@
+//  资产
+.zi_chan_wrapper {
+    // background: #000 !important;
+    background-color: #181b29;
+    .zi_chan_container {
+        width: 1270px;
+        margin: 0 auto;
+        padding: 20px 0;
+        .el-row {
+          margin:50px 0;
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+        .el-col {
+          border-radius: 4px;
+        }
+        .bg-purple-dark {
+          background: @cardBg;
+          line-height: 70px;
+          color: #fff;
+          padding-left: 8px;
+        }
+        .grid-content {
+          border-radius: 4px;
+          height: 70px;
+        }
+        .top {
+            height: 60px;
+            text-align: center;
+            line-height: 60px;
+            font-size: 28px;
+            color: #fff;
+            margin: 100px auto;
+        }
+        .zi_chan_content {
+            position:relative;
+            margin: 20px 0 100px 0;
+            min-height: 450px;
+            .assetList img{
+              position: absolute;
+              left: 0;
+              bottom: 0;
+            }
+            .assetList{
+              position: relative;
+              width: 100%;
+              height: 80px;
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              color: #fff;
+              background: @cardBg;
+              border-radius: 4px;
+              margin-bottom: 20px;
+              padding: 0 30px 0 140px;
+              box-sizing: border-box;
+              .item{
+                &.money{
+                  line-height: 1.6em;
+                }
+                flex-basis: 1;
+                &.name{
+                  text-align: left;
+                  font-weight: bold;
+                }
+              }
+              .actionBar{
+                display: flex;
+                .btn{
+                  border-radius: 4px;
+                  color: #ffffff;
+                  margin-left: 5px;
+                  cursor: pointer;
+                  &:hover{
+                    .cover{
+                      background: rgba(255, 255, 255, .2)
+                    }
+                  }
+                  .cover{
+                    padding: 10px 15px;
+                  }
+                  &.chongbi{
+                    background: @main;
+                  }
+                  &.tibi{
+                    background: #F39A22;
+                  }
+                  &.detail{
+                    background: #0AD3B9;
+                  }
+                }
+                
+              }
+            }
+            .el-table {
+              background: #2b2b2b;
+                .el-table__empty-block {
+                  min-height:400px;
+                }
+                // button{
+                //   background: #2A64F3;
+                //   color: #fff;
+                //   border: none;
+                // }
+            }
+            .el-table th>.cell {
+              position: relative;
+              word-wrap: normal;
+              text-overflow: ellipsis;
+              display: inline-block;
+              vertical-align: middle;
+              width: 100%;
+              -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+              color: #e5e5e5;
+            }
+            .el-table .cell {
+              -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+              white-space: normal;
+              word-break: break-all;
+              line-height: 23px;
+              color: #e5e5e5;
+            }
+            .el-table::before{
+              background-color: #171717;
+            }
+            .el-table__row:hover {
+              background: #3c3e42 !important;
+            }
+            .el-table--enable-row-hover .el-table__body tr:hover>td {
+                background-color: #3c3e42;
+            }
+            .el-table td, .el-table th.is-leaf {
+              border-bottom: 1px solid #3c3e42;
+            }
+            .el-table th, .el-table tr{
+              background: @cardBg !important;
+              height: 80px;
+              padding-left: 100px;
+             
+            }
+            .button_pages {
+                position:absolute;
+                bottom:10px;
+                right:10px;
+                text-align: right;
+                padding: 20px 0;
+                i {
+                    margin-right:20px;
+                }
+                span {
+                    color: #909399;
+                    padding: 0 10px;
+                    font-size: 16px;
+                    cursor: pointer;
+                    &:hover {
+                        color:#409EFF;
+                    }
+                }
+            }
+       }
+   }
+}
+

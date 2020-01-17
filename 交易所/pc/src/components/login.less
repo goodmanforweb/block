@@ -1,0 +1,255 @@
+.login_main {
+    width: 100%;
+    min-width: 1280px;
+    .content_warp {
+        height:520px;
+        flex-direction: row-reverse;
+        display:flex;
+        max-width: 1200px;
+        border-radius: 10px;
+        margin: 60px auto;
+        min-height:300px;
+        padding:40px 60px;
+        box-sizing:border-box;
+        background:#fff;
+        .prompt {
+            border-left: 1px dashed #e6e6e6;
+            padding-left: 40px;
+            width:380px;
+            color:#fff;
+            .l-info {
+                line-height: 30px;
+            }
+            .warp_prompt{
+                text-align: center;
+                padding-top: 40px;
+                :first-child{
+                    font-size: 38px;
+                }
+                :last-child{
+                    margin-top: 20px;
+                    letter-spacing:3px;
+                }
+            }
+            .rules_pwd{
+                margin-top: 60px;
+                p{
+                    text-align: center;
+                    line-height:30px;
+                    font-size:14px;
+                    // cursor: pointer;
+                }
+            }
+        }
+        .form_warp {
+            width: 600px;
+            padding-right:60px;
+            box-sizing:border-box;
+            .el-input__inner{
+               
+            }
+            .el-input__suffix-inner>.el-input__icon{
+                position: absolute;
+                right: 20px;
+            }
+            .right{
+                text-align: right;
+                font-size: 12px;
+                margin-bottom: 39px;
+                a{
+                    color: @main;
+                }
+            }
+            .mima{
+                font-size:22px;
+                font-weight:400;
+                color:rgba(42,100,243,1);
+                line-height:49px;
+            }
+            
+            .primary_btn{
+                margin-top:52px;
+                .el-form-item__content{
+                    display:flex;
+                    .el-button--primary{
+                        width:180px;
+                        height:45px;
+                        border-radius:5px;
+                    }
+                    .have{
+                        margin-left:30px;
+                        span{
+                            color:var(--textcolor);
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+    .select{
+        overflow: hidden;
+        margin-bottom: 43px;
+        span{
+            float: left;
+            text-align:center;
+            width: 154px;
+            height: 42px;
+            color:#409efe;
+            line-height:42px;
+            border:1px solid #409efe;
+            cursor: pointer;
+            // border-radius: 4px;
+        }
+        span:nth-child(1){
+            border-top-left-radius:4px;
+            border-bottom-left-radius:4px;
+        }
+        span:nth-child(2){
+            border-top-right-radius:4px;
+            border-bottom-right-radius:4px;
+        }
+        .active{
+            color:#fff;
+            background-color:#409efe;
+        }
+    }
+    .code_warp {
+        // .clearfix();
+        display: flex;
+        align-items: center;
+        .el-form-item {
+            width:70%;
+        }
+        .inp .el-input__inner{
+            border-radius:4px 0 0 4px;
+        }
+        .btn_code {
+            position: relative;
+            width: 30%;
+            font-size: 12px;
+            // margin-top: 23px;
+            // margin-left: 20px;
+            cursor: pointer;
+            .el-input__inner{
+                cursor: pointer;
+                color: #409efe;
+                background: #2b2b2b;
+                height: 36px;
+                border-left: none;
+                line-height: 34px;
+                margin-top: 7px;
+                border-radius:0 4px 4px 0;
+            }
+            .lines{
+                position: absolute;
+                top: 50%;
+                left: 0;
+                color: #aaa;
+                transform: translateY(-12%);
+                z-index: 1;
+            }
+            .el-input__inner:focus{
+                border:none;
+                height: 34px;
+                line-height: 34px;
+            }
+        }
+    }
+    //滑块样式
+//  .outer {
+//      position: relative;
+//      margin: 2px auto;
+//      height: 44px;
+//      line-height: 44px;
+//      background: @Infocolor;
+//  }
+//  .outer span,
+//  .filter-box,
+//  .inner {
+//      position: absolute;
+//      top: 0;
+//      left: 0;
+//  }
+//  .outer span {
+//      display: block;
+//      padding: 0 0 0 36px;
+//      width: 100%;
+//      height: 100%;
+//      color: #fff;
+//      text-align: center;
+//  }
+//  .filter-box {
+//      width: 0;
+//      height: 100%;
+//      background: @Bluecolor;
+//      z-index: 9;
+//  }
+//  .outer.act span {
+//      padding: 0 36px 0 0;
+//  }
+//  .inner {
+//      width: 50px;
+//      height: 44px;
+//      text-align: center;
+//      cursor: pointer;
+//      font-family: "宋体";
+//      z-index: 10;
+//      font-weight: bold;
+//      color: #929292;
+//      background: #CBD6DF;
+//  }
+//  .outer.act .inner {
+//      color: green;
+//  }
+//  .outer.act span {
+//      z-index: 99;
+//  }
+.VelWarp{
+        .verify-btn{display: none;}
+        .verify-bar-area{
+            width: 100% !important;
+             background-color: #909399 !important;
+             border: 1px solid #909399;
+             .verify-msg{
+                 color: #FFFFFF;
+             }
+        }
+        .verify-move-block{
+             background-color: #cbd6df;
+             box-shadow: none;
+        }
+       .verify-bar-area .verify-move-block:hover{
+            background-color: #fff !important;
+        }
+
+    }
+    //弹出框样式
+    .model_warp {
+        .model_login {
+            position: relative;
+            .el-input {
+                .btn_login {
+
+                    position: absolute;
+                    top: 6%;
+                    right: 1%;
+                    font-size: @h6FontSize;
+                    color: @Bluecolor;
+                    cursor: pointer;
+                    .el-input__inner{
+                         //border: none;
+                         width: 100px;
+                         height: 35px;
+                         line-height: 35px;
+                         font-size: @h6FontSize;
+                         color: @Bluecolor;
+                    }
+                }
+
+            }
+        }
+    }
+}

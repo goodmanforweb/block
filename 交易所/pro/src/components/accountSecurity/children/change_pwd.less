@@ -1,0 +1,109 @@
+ //修改登录密码
+    .change_opwd_main {
+        .contents(1280px);
+        padding-top: 20px;
+        margin-bottom: 40px;
+        .change_opwd_main_title {
+            .security_main_title(60px);
+            background: @cardBg !important;
+            margin-bottom: 20px;
+            h2{
+              color: #fff !important;
+              display: inline-block;
+              font-size: 18px;
+            }
+            span {
+                display: inline-block;
+                cursor: pointer;
+                color: #fff;
+            }
+            span {
+                display: inline-block;
+                padding: 0 15px;
+            }
+            .title {
+                color: #fff !important;
+            }
+            .right{
+                float: right;
+                color: @main;
+                font-size: 14px;
+                padding-left: 20px;
+                background-image: url(../../../assets/img/tishi.png);
+                background-repeat: no-repeat;
+                background-position-y: 26px;
+            }
+        }
+        .form_warp {
+          background: #181B29;
+          padding-top: 80px;
+          height: 520px;
+          margin: 0 auto;
+          .clform();
+          .form_cont {
+              .contents(469px);
+              .el-button,
+              .el-button--primary {
+                  width: 469px;
+                  background: #2A64F3FF;
+                  border: none;
+              }
+              .el-select{
+                  width: 100px;
+                  position: absolute;
+                  z-index: 2200;
+                  border-radius: 0;
+                  .is-focus{
+                      .el-input__inner{
+                        border: 1px solid @cardBg;
+                      }
+                  }
+              }
+              .mInput{
+                .el-input__inner{
+                    padding-left: 110px;
+                    width: 469px;
+                }
+              }
+          }
+          .el-button--primary {
+              padding: 16px 20px;
+          }
+          .el-form-item__label {
+            font-size: 14px;
+            line-height: 30px;
+            color: #eee;
+          }
+        }
+        .el-input__inner {
+          background:@cardBg  ;
+          border: 1px solid @cardBg;
+          color: #fff;
+          height: 44px;
+         
+        }
+        .tpwd {
+            .code_warp {
+                .clearfix();
+                .el-form-item,
+                .btn_code {
+                    float: left;
+                }
+                .el-form-item {
+                    width: 64%;
+                }
+                .btn_code {
+                    width: 33%;
+                    margin-top: 30px;
+                    margin-left: 12px;
+                    .el-input {
+                      .el-input__inner{
+                        background: #2A64F3FF;
+                        border: none;
+                        color: #fff;
+                      }
+                    }
+                }
+            }
+        }
+    }

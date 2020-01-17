@@ -1,0 +1,141 @@
+@import '../../assets/public.less';
+@import '../../assets/reset.less';
+.notice{
+	.Publicwidth();
+	.information{
+		// .secondlyheaderlayout();
+		.title{ 
+			height: 60px;
+			line-height: 60px;
+			color: #8588d0!important;
+			p{display: inline-block;
+					color: white;
+					font-weight: 600}
+			a{color:@bgcolorffffff!important;
+				font-weight: 600; }
+
+		}
+		.box{
+			min-height: 630px;
+			color: #9799d8!important;
+			.main{
+				// .Horizontalrow();
+				.list:nth-of-type(2){
+					color: #a8abed!important;
+				}
+				height: 60px;
+				line-height: 60px;
+			}
+		}
+	}
+}
+.help{
+	background: #fff;
+	color: #666666;
+	border-radius: 10px;
+	width: 1280px;
+	margin: 60px auto;
+	overflow: hidden;
+	.cont-hd {
+		height: 40px;
+		line-height: 40px;
+		border-bottom: 1px solid rgba(0,0,0,.1);
+		position: relative;
+		padding-left: 16px;
+		color: #009dfa;
+		font-weight: bold;
+		font-size: 18px;
+		margin-bottom: 30px;
+		&:before {
+			content:'';
+			position: absolute;
+			width:2px;
+			height: 25px;
+			background: #009dfa;
+			margin: auto;
+			left:0;
+			top: 0;
+			bottom: 0;
+
+		}
+	}
+	.transfter-lists {
+		height: 50px;
+		line-height: 50px;
+		.title {
+			color:#333;
+			font-size: 18px;
+		}
+		.time {
+			color:#666;
+			font-size: 12px;
+		}
+		li {
+			cursor: pointer;
+			border-bottom: 1px solid rgba(0,0,0, .1)
+		}
+	}
+	.helpmain{
+		.h1{
+			font-size: 26px;
+			height: 60px;
+			line-height: 60px;
+			color:#000;
+			background: #e0dfe8;
+			padding: 0 50px;
+		}
+		.helpbox{
+			font-size: @h3FontSize;
+			display: flex;
+			.nav{
+				padding-left:50px;
+				padding-top: 20px;
+				width: 115px;
+				background: #f5f4fb;
+				.box{
+					.list{
+						height: 50px;
+						line-height: 50px;
+						cursor: pointer;
+						font-size:16px;
+						// color:#ffffff;
+					}
+				}
+			}
+			.content{
+				padding: 30px 50px;
+				order: 1;
+    			flex: 1;
+    			min-height: 530px;
+				.contentbox{
+					p{
+						line-height: 42px;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+.mainy{
+	.help{
+		.helpmain{
+			.helpbox{
+				color: #666666;
+				.content{
+					.contentbox{
+						p, strong, span{
+							color: #666666 !important;
+						}
+					}
+				}
+			}
+		}
+	}
+}

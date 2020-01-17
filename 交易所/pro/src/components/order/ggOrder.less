@@ -1,0 +1,443 @@
+// 币币订单->订单
+.gg_order_wrapper {
+    margin-top: 10px;
+    .green {
+        color: green;
+    }
+    .red {
+        color: red;
+    }
+    .gethuilv{
+        display: none;
+    }
+  background: #171717;
+  .el-dialog__title{
+      font-weight: bold;
+  }
+  .el-dialog__header{
+    height: 60px;
+    box-sizing: border-box;
+    background: #181B29;
+    color: #FFFFFF;
+    .el-dialog__close{
+        transform: scale(2);
+    }
+}
+.el-dialog__title {
+    color: #FFF;
+}
+
+.dialog_set .dialog-footer button,
+.dialogwrappers .el-button {
+    background: #FFA517 !important;
+    border: none;
+    color: #FFF;
+}
+
+.dialogwrappers .dialog-footer .el-button--primary {
+    background: #2A64F3 !important;
+}
+
+.el-dialog--center .el-dialog__body,
+.el-dialog--center .el-dialog__footer {
+    background: #272A3A;
+    color: #FFF;
+}
+.dialog_set{
+    width: 356px;
+    .dialog-footer{
+        display: flex;
+        justify-content: space-between;
+        button{
+            width:  150px;
+        }
+    }
+}
+.dialog_gethuilv{
+    .el-dialog__body{
+        p, span, strong{
+            color: #303133 !important;
+        }
+    }
+    .el-button{
+        background: @main;
+        color: #ffffff;
+        width: 128px;
+        height: 33px;
+        line-height: 33px;
+        padding: 0;
+        text-align: center;
+    }
+    .el-dialog__footer{
+        text-align: center;
+    }
+}
+      .el-table_body tr:hover>td{
+        background: #2b2b2b;
+      }
+      .el-table td, .el-table th.is-leaf {
+        border-bottom: 1px solid #2b2b2b;
+      }
+      .el-table .cell {
+        color: #ddd;
+      }
+      .el-table--enable-row-hover .el-table__body tr:hover>td {
+        background-color: #2b2b2b;
+      }
+      .el-button--primary {
+        color: #FFF;
+        background-color: @homeBgBtn;
+        border-color: @homeBgBtn;
+      }
+      .todos{
+        color: @main;
+      }
+    .headertongji{
+       .clearfix();
+       margin-bottom: 10px;
+       border-radius: 5px;
+       // background: #fff;
+       box-shadow: 0 2px 12px 0 rgba(0,0,0,.1);
+        .tongji{
+          float: left;  
+          padding: 25px 0;
+          width: 30%;
+          text-align: center;
+          h2{
+              line-height: 30px;
+              color: @cunColor;
+              span{
+                  color: #333;
+                  font-weight: 700;
+              }
+          }
+        }
+        .line{
+            height: 60px;
+            width: 1px;
+            background: @border1;
+            margin-top: 25px;
+            float: left;
+        }
+    }
+    .relatives{
+        width:271px;
+        position: relative;
+        color: #fff;
+        &:last-child{
+            margin-bottom: 0;
+        }
+        span{
+            text-align: center;
+            width: 80px;
+            position: absolute;
+            left: 0;
+            line-height: 40px;
+            z-index: 1;
+            color: #666666;
+
+        }
+        input{
+            border: none;
+            outline:none;
+            color: #666666;
+            padding-left: 80px;
+            box-sizing: border-box;
+            background: #eeeeee;
+
+        }
+    }
+    .relatives.pc{
+        width: 100%;
+        span{
+            width: 80px;
+            text-align: left;
+        }
+        input{
+            padding-left: 80px;
+        }
+    }
+    .relativesdd{
+        margin-bottom: 15px;
+        align-items: center;
+        justify-content: space-between;
+        display: flex;
+        .spanss{
+            color: #666666;
+            font-size: 14px;
+        }
+    }
+    .dialogwrappers{
+        .el-button{
+            background: transparent;
+        }
+        .el-dialog__header{
+            text-align: left;
+        }
+        .el-dialog{
+            background: #fffdf2;
+        }
+    }
+    .dialogdiv{
+        margin-bottom: 12px;
+        span{
+            margin-right: 41px;
+        }
+
+    }
+    .dialogwrappers{
+        .dialog-footer{
+            .el-button--primary{
+                background: @main;
+                color: #fff;
+            }
+        }
+    }
+    .block{
+        color:#fff;
+        padding: 20px;
+        input{
+            background-color: transparent;
+        }
+    }
+    .beizhu {
+        text-align: center;
+        font-size: 12px;
+        position: relative;
+        top: 30px;
+        color: red;
+    }
+    .cell {
+        font-size: 12px;
+        white-space: normal;
+        word-break: break-all;
+        overflow:unset;
+    }
+    .todos {
+        // color: #fff;
+        cursor: pointer;
+        padding: 5px;
+    }
+    .warning{
+      color: @main;
+      background-color: #171717;
+      border-color: @main;
+    }
+    .todoss{
+        color: #fff;
+    }
+    // background: @wrapGrayColor;
+    .order_container {
+        // .public_wrapper();
+        // min-width: 1280px;
+        margin: 0 auto;
+        padding:40px 0 90px 0;
+        &.all{
+            width: 1280px;
+        }
+        .title{
+            height:58px;
+            width:100%;
+            background:#1d1d1d;
+            border:1px solid #242526;
+            border-radius:4px;
+            padding:0 20px;
+            box-sizing:border-box;
+            color:#fff;
+            line-height:58px;
+        }
+
+        .header_tongji{
+            height:58px;
+            width:100%;
+            margin:40px 0;
+            display:flex;
+            justify-content: space-between;
+            li{
+                width:24%;
+                height:100%;
+                background:#1d1d1d;
+                border:1px solid #242526;
+                border-radius:4px;
+                line-height:58px;
+                text-align:center;
+                color:#eeeeee;
+                font-size:18px;
+            }
+            .fenxian{
+                color:#03c087;
+            }
+        }
+
+        .content {
+            position: relative;
+            // min-height: 600px;
+            box-shadow:none  ;
+            border:none  ;
+            .el-tabs__header{
+                padding-left: 1px;
+            }
+            .is-top{
+                background:#171717  ;
+                // color:#eeeeee  ;
+                font-size:16px  ;
+                margin:0  ;
+            }
+            .el-tabs__item{
+                color:#eee  ;
+            }
+            .is-active{
+                color: @main  ;
+            }
+            .el-tabs__active-bar{
+                background:@main  ;
+            }
+            .el-tabs__nav-wrap::after{
+                background:#434548  ;
+                z-index: 2;
+            }
+            .is-leaf{
+                border-bottom: 1px solid #434548;
+            }
+            .el-table{
+                background: #171717;
+                tr{
+                    background-color: #171717  ;
+                    th{
+                        background-color: #171717  ;
+                        color:#eeeeee  ;
+                    }
+                }
+            } 
+            .el-table__empty-block{
+                background:#171717  ;
+            }
+            .el-table::before{
+                display:none  ;
+            }
+            
+            //  动画效果
+            .green {
+                color: @Successcolor;
+            }
+            .red {
+                color: @redColor;
+            }
+            .nowDeal {
+                .el-table__expanded-cell {
+                    padding: 20px 52px;
+                    .drop_down {
+                        display: flex;
+                        justify-content: flex-start;
+                        .el-form-item {
+                            width: 15%;
+                            margin-right: 0;
+                            &:first-child {
+                                width: 16%;
+                            }
+                            .el-form-item__label {
+                                text-align: left;
+                            }
+                            .el-form-item__content {
+                                display: block;
+                            }
+                        }
+                    }
+                }
+            }
+            .historyWt {
+                .el-table__expanded-cell {
+                    padding: 20px 0 20px 48px;
+                    .drop_down {
+                        display: flex;
+                        justify-content: space-between;
+                        .el-form-item {
+                            width: 16%;
+                            margin-right: 0;
+                            &:first-child {
+                                width: 18%;
+                            }
+                            .el-form-item__label {
+                                text-align: left;
+                            }
+                            .el-form-item__content {
+                                display: block;
+                            }
+                        }
+                    }
+                }
+            }
+            #pane-first .el-table {
+                th:nth-of-type(10) {
+                    text-align: center;
+                }
+            }
+            #pane-second {
+                .el-table:last-child {
+                    th:nth-of-type(11) {
+                        text-align: center;
+                    }
+                }
+            }
+            #pane-third .el-table {
+                th:nth-of-type(10),
+                td:nth-of-type(10),
+                th:nth-of-type(12) {
+                    text-align: center;
+                }
+            }
+            .el-table__row {
+                td:last-child {
+                    text-align: center;
+                }
+            }
+            .el-form-item {
+                margin-bottom: 0;
+            }
+            .right {
+                position: absolute;
+                right: 120px;
+                top:3px;
+                font-size: @h4FontSize;
+                .bitType {
+                    display: inline-block;
+                    background: @wrapGrayColor;
+                    border: 1px solid @cunColor;
+                    padding: 9px 10px;
+                    padding-right: 30px;
+                    color: @cunColor;
+                    border-radius: 4px;
+                    margin-right: 5px;
+                }
+                .el-input__inner {
+                    width: 120px;
+                    height: 34px;
+                    line-height: 34px;
+                    background: @wrapGrayColor;
+                    border: 1px solid @cunColor;
+                    margin-left: 5px;
+                }
+                .el-button {
+                    height: 34px;
+                    line-height: 34px;
+                    padding: 0 20px;
+                    vertical-align: middle;
+                }
+            }
+        }
+    }
+    .diaBody {
+        width: 60%;
+        margin: 0 auto;
+    }
+    .stopwill,
+    .stopLoss {
+        text-align: left;
+        margin-top: 18px;
+    }
+    .el-paginations{
+        padding-top: 40px;
+        text-align: center;
+        background: #171717;
+    }
+}

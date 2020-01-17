@@ -1,0 +1,405 @@
+.apply_main {
+    // height: 750px;
+    .contents(100%);
+    margin-top: 10px;
+    padding: 95px 0 90px 0;
+    .applyIng {
+        width: 1280px;
+        margin: 0 auto;
+        .apply_header {
+            text-align: left;
+            h2 {
+                font-size: @hFontSize;
+                letter-spacing: 1px;
+                color:#fff ;
+                font-size:48px;
+            }
+            p { 
+                font-size: @h4FontSize;
+                color:#fff ;
+                line-height: 54px;
+                letter-spacing: 2px;
+                font-size:18px;
+            }
+        }
+        .apply_cont {
+            .contents(60%);
+            .clearfix();
+            margin-top: 60px;
+            .sell,
+            .buy {
+                border-radius: 8px;
+                float: left;
+                width: 30%;
+                padding: 120px 6% 50px 6%;
+                height: 220px;
+                background: #15151C ;
+                box-shadow: 1px 1px 10px #000000 ;
+                text-align: center;
+
+                cursor: pointer;
+                h2 {
+                    margin-top: 15px;
+                    font-size: 22px;
+                    line-height: 58px;
+                    color: #fff ;
+                }
+                .tishi {
+                    color:#eeeeee ;
+                    font-size:16px ;
+                    line-height: 1.8em;
+
+                }
+                img {
+                    height: 68px;
+                    width: 68px;
+                    transition: all .3s;
+                }
+            }
+            .buy:hover img {
+                height: 75px;
+                width: 75px;
+            }
+            .sell:hover img {
+                height: 75px;
+                width: 75px;
+            }
+            .sell {
+                margin-right: 12%;
+            }
+            .sell:hover{
+                box-shadow: 0 0 9px 2px @main ;
+            }
+            .buy:hover{
+                box-shadow: 0 0 9px 2px @main ;
+            }
+        }
+        .prompt {
+            .contents(85%);
+            padding-top: 90px;
+            // text-align: center;
+            font-size: @h3FontSize;
+            color: @zhanColor;
+            line-height: 24px;
+            display:flex;
+            p{
+                color:#eeeeee;
+                span{
+                    color:@main;
+                }
+                line-height: 1.8em;
+            }
+
+        }
+        .removeApply{
+                // border-top: 1px solid @border3;
+                margin-top: 36px;
+                text-align: center;  
+                color:@main;
+                position: relative;
+                left: -10px;  top: 18px;
+                padding-top: 15px;
+                cursor: pointer;    
+            }
+    }
+    //弹框
+    .el-message-box__wrapper {
+        .el-message-box {
+            padding-bottom: 50px; 
+            width: 709px;
+            // padding: 18px;
+            .el-message-box__header{
+                background:@boxHeader;
+                padding:0 30px;
+                display:flex;
+                align-items:center;
+                height: 70px;
+                justify-content: space-between;
+                .el-message-box__title{
+                    line-height:70px;
+                    height: 70px;
+                    span{
+                        color: #222222;
+                        font-size: 20px;
+                    }
+
+                }
+                .el-message-box__headerbtn{
+                    position: initial;
+                }
+                .el-message-box__close el-icon-close{
+                    transform: scale(2);
+                }
+            }
+            .el-message-box__btns {
+                text-align:center;
+                .btns_2{
+                    background:#fff;
+                    border-color: @main;
+                    color:@main ;
+                }
+                .bnts_1{
+                    background:@main;
+                    border-color: @main;
+                    color: #ffffff;
+                }
+                button{
+                    width: 192px;
+                }
+                .ck {
+                    margin-top: 10px;
+                    float: left;
+                    .el-checkbox__label {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+        .el-message-box__title {
+            span {
+                font-weight: 700;
+            }
+            // padding-bottom: 20px;
+        }
+        .el-message-box__content {
+
+            padding:30px ;
+            
+
+            h2 {
+                color:#222222 ;
+                font-size: 16px;
+                line-height: 34px;
+                margin-bottom: 8px;
+                font-weight: 700;
+            }
+            .info {
+                line-height: 24px;
+                color: #333333;
+                font-size: @h6FontSize;
+            }
+            .second {
+                margin-top: 20px;
+                padding-bottom: 10px;
+                border-bottom: 1px solid @border2;
+                border:none ;
+            }
+            .el-checkbox__inner{
+                border-color: @main; 
+            }
+            .el-checkbox__input.is-checked+.el-checkbox__label{
+                color: @main;
+            }
+            .el-checkbox__input.is-checked .el-checkbox__inner{
+                background:  @main;
+            }
+        }
+    }
+}
+
+//sell 页面
+
+.sell_main {
+    width: 100%;
+    .sell_main_wrap{
+        padding-top: 90px;
+        padding-bottom: 50px;
+        width: 1280px;
+        margin: 0 auto;
+    }
+    .el-checkbox__inner {
+        border: 1px solid @main;
+        background: transparent;
+        color: @main;
+    }
+    .tishi {
+        margin-left: 18px;
+        font-size: 12px;
+        color: #409EFF;
+    }
+    //loading 样式
+    .el-loading-spinner .circular {
+        width: 22px;
+        height: 22px;
+    }
+    .no_list {
+        color: @cunColor;
+        font-size: @h6FontSize;
+        margin-top: 30px;
+        text-align: center;
+    }
+    padding-left: 0;
+    .form_warp {
+        // .contents(50%);
+        width:870px;
+        margin:0 auto;
+        .add_pay{
+            border:none ;
+            color:@main;
+        }
+        .el-form-item__label{
+            color:#FFF ;
+        }
+        .el-input__inner{
+            border-color:#303341 ;
+            background:#17171E ;
+            color:#999999 ;
+            
+        }
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button{
+            -webkit-appearance: none ;
+            margin: 0;
+        
+            } 
+    }
+    .sellBuy_title {
+        text-align:left;
+        
+        h2 {
+            font-size: 32px;
+            letter-spacing: 1px;
+            color:#FFF ;
+        }
+        p {
+            color:#FFF ;
+            font-size: @h4FontSize;
+            line-height: 50px;
+        }
+    }
+    .form_warp {
+        margin-top: 90px;
+        .el-form-item{
+            margin-bottom: 30px;
+        }
+        .el-form-item__label{
+            margin-bottom: 5px;
+        }
+        .clform();
+        .limit {
+            // .clearfix();
+            display:flex;
+            justify-content:space-between;
+            .el-form-item {
+                // position: relative;
+                // float: left;
+                width: 48%;
+                // margin-right: 5%;
+                .cny {
+                    position: absolute;
+                    top: 2px;
+                    right: 10px;
+                    color:#FFF;
+                }
+                .el-input__suffix {
+                    right: 40px;
+                }
+            }
+        }
+        .lis_warp {
+            li {
+                color:#eee ;
+                border-bottom: 1px solid #434548 ;
+                .el-checkbox {
+                    float: right;
+                }
+            }
+        }
+        .add_pay {
+            cursor: pointer;
+            margin-top: 15px;
+            .ht(44px);
+            text-align: center;
+        }
+        .el-button--primary {
+            margin-top: 20px;
+            height: 44px;
+            width: 100%;
+            background:@main ;
+            border-color: @main ;
+        }
+        .wx {
+            color: #41C836;
+        }
+        .car {
+            color: #F2994A;
+        }
+        .alipay {
+            color: #2D9CDA;
+        }
+        .paypal{
+            color: #2D9CDA;
+        }
+    }
+    .sellBuy_list {
+        padding-top: 50px;
+        .contents(90%);
+        .sellBuy_title {
+            width: 100%;
+            margin-bottom: 30px;
+        }
+        .sellBuy_title_warp {
+            span {
+                color:#fefefe ;
+                font-size: @h4FontSize;
+                width: 13%;
+                text-align: center;
+                // display: inline-block;
+
+            }
+            p{
+                width:13%;
+                text-align:center;
+                span{
+                    padding:8px 18px;
+                    background:@main;
+                    border-radius:4px;
+                }
+            }
+            .dingdan {
+                text-align:center;
+                
+            }
+            .todo {
+                
+                // text-align: right;
+            }
+            .sellBuy_nav {
+                // padding: 10px 0;
+                line-height:50px;
+                height:50px;
+                background:#262937;
+                display: flex;
+                justify-content:space-between;
+            }
+            .sellBuy_lis_warp {
+                padding-bottom: 50px;
+                
+                .sellBuy_lis {
+                    display: flex;
+                    justify-content:space-between;
+                    // .ht(44px);
+                    // padding:15px 0;
+                    line-height:44px;
+                    height:44px;
+                    border:none ;
+                    border-bottom: 1px solid #434548 ;
+                    span {
+                        color: #ffffff;
+                    }
+                    .dingdan,
+                    .todo {
+                        color: #ffffff;
+                    }
+                    .todo {
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            .el-pagination {
+                text-align: right;
+            }
+        }
+    }
+}

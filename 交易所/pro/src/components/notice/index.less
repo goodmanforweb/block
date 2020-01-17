@@ -1,0 +1,191 @@
+@import '../../assets/public.less';
+@import '../../assets/reset.less';
+.notice{
+	.Publicwidth();
+	.information{
+		// .secondlyheaderlayout();
+		.title{ 
+			height: 60px;
+			line-height: 60px;
+			color: #8588d0!important;
+			p{display: inline-block;
+					color: white;
+					font-weight: 600}
+			a{color:@bgcolorffffff!important;
+				font-weight: 600; }
+
+		}
+		.box{
+			min-height: 630px;
+			color: #9799d8!important;
+			.main{
+				// .Horizontalrow();
+				.list:nth-of-type(2){
+					color: #a8abed!important;
+				}
+				height: 60px;
+				line-height: 60px;
+			}
+		}
+	}
+}
+.help{
+	min-height: 750px;
+	background: @homeBg;
+	padding: 0 50px;
+	color: #fff;
+	.Publicwidth();
+	.helpmain{
+		padding-top: 50px;
+		.h1{
+			font-size: @fontsize40;
+			height: 60px;
+			line-height: 60px;
+			color:#FEFEFE;
+		}
+		.h2{
+			font-size: @h3FontSize;
+			height: 60px;
+			line-height: 60px;
+			color:#FEFEFE;
+		}
+		.helpbox{
+			font-size: @h3FontSize;
+			display: flex;
+			margin-top: 50px;
+			padding-bottom: 50px;
+			.nav{
+				width: 150px;
+				.box{
+					.list{
+						height: 45px;
+						line-height: 45px;
+						cursor: pointer;
+						font-size:16px;
+						// color:#ffffff;
+					}
+				}
+			}
+			.content{
+				order: 1;
+    			flex: 1;
+    			min-height: 530px;
+				.contentbox{
+					p{
+						line-height: 42px;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+//挖矿
+.wak{
+	width:100%;
+	background: url("../../assets/image/index/wk-bg-img.jpg") no-repeat;
+	background-size: 100% 100%;
+	.wakmain{
+		display:flex;
+		padding:50px 0 50px 0;
+		justify-content:space-evenly;
+		// min-height: 750px;
+		.Publicwidth();
+		.wa_right{
+			padding-top: 50px;
+			h5{
+				color:#fff;
+				font-size:42px;
+				line-height:80px;
+			}
+			ul{
+				margin:20px 0;
+				li{
+					font-size:16px;
+					color:#bbbbbb;
+					line-height:30px;
+				}
+			}
+			.wa_p1{
+				color:#fff;
+				font-size:16px;
+				line-height:40px;
+			}
+			.wa_p2{
+				color:#fff;
+				font-size:20px;
+				line-height:50px;
+			}
+			.bbtn{
+				a{
+				display: inline-block;
+				width:171px;
+				height:66px;
+				background:url('../../assets/img/xia_btn.png') no-repeat;
+				background-size:100%;
+				text-align:center;
+				line-height:58px;
+				cursor: pointer;
+				font-size:20px;
+				color:#fff;
+				margin-top:30px;
+				}
+				
+			}
+		}
+	}
+}
+
+
+
+
+
+
+.mainy{
+	.notice{
+		.information{
+			// .secondlyheadercss();
+			.box{
+				// background-color: @bgcolor1a2332;
+				// color: @fontcolord6d7db;
+				.main{
+					margin-top: 18px;
+					// border-bottom: 1px dashed	 @bordercolor3b4c6e;
+					.list{
+						// color: @fontcolord6d7db;
+					}
+				}
+			}
+		}
+	}
+	.help{
+		.helpmain{
+			.h1{
+				color:  #fff;
+			}
+			.h2{
+				color:  #fff;
+			}
+			.helpbox{
+				color: #fff;
+				.nav{
+
+					.box{
+						.list{}
+						.on{
+							// color: @fontcolore3c394;
+						}
+					}
+				}
+				.content{
+					.contentbox{
+						p, strong, span{
+							color: #fff !important;
+						}
+					}
+				}
+			}
+		}
+	}
+}

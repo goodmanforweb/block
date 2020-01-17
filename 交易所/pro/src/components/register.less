@@ -1,0 +1,252 @@
+.register_main {
+    // .main();
+    width: 100%;
+    min-width: 1280px;
+    background:url("../assets/img/denglu-bg-img.png");
+    .yhbox{
+        overflow:auto;
+        max-height: 77vh;
+    }
+    // background:url(../assets/img/reg_bg.png) no-repeat;
+    .el-message-box__title span{
+        color: #666666;
+    }
+    .flex{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        #quhao{
+            width: 100px;
+            height: 44px;
+            text-align-last:center;
+            background-image: url(../assets/img/xuanze.png);
+            background-repeat: no-repeat;
+            background-position: 88px 35px;
+            cursor: pointer;
+            border: none;
+            outline: none;
+            // position: absolute;
+            // left: -100px;
+            // top: 0;
+        }
+        // .el-input__suffix{
+        //     display: none;
+        // }
+        // .flexItem{
+        //     width: 380px;
+        //     .el-input__inner{
+        //         width: 380px !important;
+        //     }
+        // }
+    }
+    #youxiang{
+        width: 480px;
+        .el-form-item__content{
+            width: 480px;
+            .el-input{
+                width: 480px;
+            }
+            .el-input__inner{
+                width: 480px !important;
+            }
+        }
+    }
+    #regBtn{
+        .el-form-item__content{
+            border-bottom: 0;
+        }
+    }
+    .el-form-item__content{
+        position: relative;
+        border-bottom: 1px solid #42455e;
+        &:hover{border-bottom: 1px solid @main;}
+        .el-select{
+            .el-input--suffix{
+                el-input__suffix{
+                    display: none;
+                }
+            }
+        }
+    }
+    .el-form-item__content.btnnn{
+        border-bottom: 0 !important;
+    }
+    .content_warp {
+        // .clearfix();
+        display:flex;
+        width:100%;
+        min-height:300px;
+        
+        .prompt {
+            width:380px;
+            height:700px;
+            padding:150px 45px;
+            box-sizing:border-box;
+            // background:rgba(34,87,216,0.8);
+            background:rgba(42,100,243, 0.7);
+            background-size:100% 100%; 
+            color:#fff;
+            .warp_prompt{
+                text-align: center;
+                padding-top: 40px;
+                :first-child{
+                    font-size: 38px;
+                    font-weight: 600;
+                }
+                :last-child{
+                    margin-top: 20px;
+                    letter-spacing:3px;
+                    font-size: 18px;
+                }
+            }
+            .rules_pwd{
+                margin-top: 40px;
+                p{
+                    text-align: center;
+                    line-height:30px;
+                    font-size:14px;
+                    // cursor: pointer;
+                }
+            }
+        }
+        .form_warp {
+            flex:1;
+            // padding-top: 25px;
+            width:630px;
+            height:700px;
+            background:@cardBg;
+            box-sizing:border-box;
+            padding:40px 70px;
+            .code_warp{
+                display: flex;
+                justify-content: space-between;
+                .el-form-item{
+                    width: 70%
+                }
+                .btn_code{
+                    width: 30%;
+                    height: 44px;
+                    border-radius: 0;
+                    border-bottom: 1px solid #42455e;
+                    margin-bottom: 10px;
+                    input {
+                        cursor:pointer;
+                        border:none;
+                        background-color: transparent;
+                        color:#f39a22 !important;
+                        font-size: 16px;
+                        text-align: right;
+                      }
+                }
+                el-input{
+                    border: 0;
+                }
+            }
+            .account-icon,.account-icon1,.account-icon2,.account-icon3,.account-icon4{
+                display: inline-block;
+                background: url("../assets/img/user-img.png") no-repeat;
+                background-size: 100% 100%;
+                width: 18px;
+                height: 19px;
+                vertical-align:middle;
+            }
+            .account-icon1{
+                background: url("../assets/img/yanzeng-img.png") no-repeat;
+                background-size: 100% 100%;
+            }
+            .account-icon2{
+                background: url("../assets/img/yzm-icon.png") no-repeat;
+                background-size: 100% 100%;
+            }
+            .account-icon3{
+                background: url("../assets/img/paswd-img.png") no-repeat;
+                background-size: 100% 100%;
+            }
+            .account-icon4{
+                background: url("../assets/img/yaoqing-img.png") no-repeat;
+                background-size: 100% 100%;
+            }
+            .el-input__inner{
+                padding: 0;
+                position: relative;
+            }
+            .el-input__suffix-inner>.el-input__icon{
+                position: absolute;
+                right: 20px;
+            }
+            // .right{
+            //     text-align: right;
+            //     font-size: 12px;
+            //     margin-bottom: 39px;
+            //     a{
+            //         color: @main;
+            //     }
+            // }
+            .right1{
+                font-size: 14px;
+                margin-bottom: 30px;
+                color: @colorBBB;
+                a{
+                    color: #f39a22;
+                }
+
+            }
+            .mima{
+                font-size:22px;
+                font-weight:400;
+                color:#fff;
+                line-height:49px;
+            }
+            .el-form-item{
+                .el-input{
+                    input{
+                        width: 380px;
+                        height: 44px;
+                        line-height: 44px;
+                        background:@cardBg;
+                        border: none;
+                        border-radius: 0;
+                        color: grey;
+                        padding-left: 30px;
+                    }
+                    }
+                    .input1{
+                        .el-input__inner{
+                            width: 320px;
+                        }
+                }
+                
+            }
+            .el-checkbox{
+                margin: 0;
+            }
+            .el-checkbox+a{
+                font-size: 14px;
+                color: #f39a22;
+            }
+            .primary_btn{
+                margin-top:52px;
+                .el-form-item__content{
+                    display:flex;
+                    .el-button--primary{
+                        width:180px;
+                        height:45px;
+                        background:@main;
+                        border-radius:5px;
+                        border: none;
+                    }
+                    .have{
+                        margin-left:30px;
+                        span{
+                            color:@main;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.el-select .el-input .el-select__caret{
+    display: none;
+}

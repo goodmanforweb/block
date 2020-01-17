@@ -1,0 +1,103 @@
+.register_main {
+    .el-form--label-top .el-form-item__label {
+        padding-bottom: 0
+    }
+    .el-form-item {
+        margin-bottom: 14px;
+    }
+    
+    #regBtn{
+        .el-form-item__content{
+            border-bottom: 0;
+        }
+    }
+    .content_warp {
+        // height:520px;
+        flex-direction: row-reverse;
+        display:flex;
+        max-width: 1200px;
+        border-radius: 10px;
+        margin: 60px auto;
+        min-height:300px;
+        padding:40px 60px;
+        box-sizing:border-box;
+        background:#fff;
+        .prompt {
+            border-left: 1px dashed #e6e6e6;
+            padding-left: 40px;
+            width:380px;
+            color:#fff;
+            .l-info {
+                line-height: 30px;
+            }
+            .warp_prompt{
+                text-align: center;
+                padding-top: 40px;
+                :first-child{
+                    font-size: 38px;
+                }
+                :last-child{
+                    margin-top: 20px;
+                    letter-spacing:3px;
+                }
+            }
+            .rules_pwd{
+                margin-top: 60px;
+                p{
+                    text-align: center;
+                    line-height:30px;
+                    font-size:14px;
+                    // cursor: pointer;
+                }
+            }
+        }
+        .form_warp {
+            width: 600px;
+            padding-right:60px;
+            box-sizing:border-box;
+            .el-input__inner{
+               
+            }
+            .el-input__suffix-inner>.el-input__icon{
+                position: absolute;
+                right: 20px;
+            }
+            .right{
+                text-align: right;
+                font-size: 12px;
+                margin-bottom: 39px;
+                a{
+                    color: @main;
+                }
+            }
+            .mima{
+                font-size:22px;
+                font-weight:400;
+                color:rgba(42,100,243,1);
+                line-height:49px;
+            }
+            
+            .primary_btn{
+                margin-top:52px;
+                .el-form-item__content{
+                    display:flex;
+                    .el-button--primary{
+                        width:180px;
+                        height:45px;
+                        border-radius:5px;
+                    }
+                    .have{
+                        margin-left:30px;
+                        span{
+                            color:var(--textcolor);
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.el-select .el-input .el-select__caret{
+    display: none;
+}

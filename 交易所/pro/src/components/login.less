@@ -1,0 +1,381 @@
+.el-message-box.googleDialog{
+    background: @cardBg !important;
+    .el-input__inner{
+        background-color: @homeBg;
+    }
+    .el-message-box__header{
+        border-bottom: none;
+        background: @cardBg !important;
+
+    }
+    .el-message-box__content{
+        background: @cardBg !important;
+    }
+}
+
+.login_main {
+    width: 100%;
+    min-width: 1280px;
+    background:url(../assets/img/denglu-bg-img.png) no-repeat;
+
+    .content_warp {
+        // .clearfix();
+        display:flex;
+        width:100%;
+        min-height:300px;
+        .prompt { 
+            width:380px;
+            height:430px;
+            padding:60px 45px;
+            box-sizing:border-box;
+            background:rgba(42,100,243, 0.7);
+            color:#fff;
+            .warp_prompt{
+                text-align: center;
+                padding-top: 40px;
+                :first-child{
+                    font-size: 38px;
+                    font-weight:600 ;
+                }
+                :last-child{
+                    font-size: 18px;
+                    margin-top: 20px;
+                    letter-spacing:3px;
+                }
+            }
+            .rules_pwd{
+                margin-top: 60px;
+                p{
+                    text-align: center;
+                    line-height:30px;
+                    font-size:14px;
+                    // cursor: pointer;
+                }
+            }
+        } 
+        .form_warp {
+            flex:1;
+            // padding-top: 25px;
+            width:590px;
+            height:430px;
+            background:@cardBg;
+            padding:40px 60px;
+            box-sizing:border-box;
+            .account-icon,.account-icon1{
+                display: inline-block;
+                background: url("../assets/img/user-img.png") no-repeat;
+                background-size: 100% 100%;
+                width: 18px;
+                height: 19px;
+                vertical-align:middle;
+            }
+            .account-icon1{
+                background: url("../assets/img/paswd-img.png") no-repeat;
+                background-size: 100% 100%;
+                width: 18px;
+                height: 20px;
+            }
+            .el-input__inner{
+                padding:0px;
+                background-color: @cardBg;
+            }
+            .el-input__suffix-inner>.el-input__icon{
+                position: absolute;
+                right: 20px;
+               
+            }
+            
+
+            .right{
+                text-align: right;
+                font-size: 12px;
+                margin-bottom: 39px;
+                a{
+                    color: @main;
+                }
+            }
+            .right1{
+                // text-align: right;
+                font-size: 14px;
+                margin-bottom: 30px;
+                color: @colorBBB;
+                a{
+                    color: #f39a22;
+                }
+
+            }
+       
+            .mima{
+                font-size:22px;
+                font-weight:400;
+                color:#fff;
+                line-height:49px;
+            }
+            .el-form-item{
+                width: 480px;
+                display: flex;
+                align-items: center;
+                
+                height: 45px;
+                .el-input{
+                    input{
+                        width: 480px;
+                        height: 44px;
+                        line-height: 44px;
+                        background: @cardBg;
+                        border: none;
+                        border-bottom: 1px solid #42455e;
+                        border-radius: 0;
+                        &:hover{border-bottom: 1px solid @main;}
+                        color: grey;
+                        padding-left: 40px;
+                    }
+                }
+            }
+            .primary_btn{
+                margin-top:52px;
+                .el-form-item__content{
+                    display:flex;
+                    .el-button--primary{
+                        width:180px;
+                        height:45px;
+                        background:#2a64f3;
+                        border-radius:5px;
+                        border: none;
+                    }
+                    .have{
+                        margin-left:30px;
+                        span{
+                            color:#f39a22;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+
+    // .form_warp {
+    //     flex:1;
+    //     // padding-top: 25px;
+    //     background:#e8e8ea;
+    //     padding:20px 60px;
+    //     box-sizing:border-box;
+    //     .content_warp {
+    //         .el-button--primary {
+    //             width: 40%;
+    //             background: @main;
+    //             border: none;
+    //             float: left;
+    //         }
+    //         .have {
+    //             padding-left: 28px;
+    //             float: left;
+    //             span {
+    //                 color: @main;
+    //                 font-size: @h6FontSize;
+    //                 cursor: pointer;
+    //             }
+    //         }
+    //         .primary_btn {
+    //             margin-top: 60px;
+    //         }
+    //         .imgCode{
+    //             .clearfix();
+    //             .inp_warp{
+    //                 float: left;
+    //                 width: 55%;
+    //                 margin-right: 2%;
+    //             }
+    //             .img_warp{
+    //                 float: left;
+    //                 width: 40%;
+    //                 margin-top: 22px;
+    //                 img{
+    //                     height: 44px;
+    //                     cursor: pointer;
+    //                 }
+    //             }
+    //         }
+    //       .el-input__inner{
+    //         border:1px solid #b5b5b5;
+    //       }
+
+    //     }
+    //     .prompt {
+    //         .prompt(20px);
+    //         .go_reg {
+    //             display: inline-block;
+    //             padding-top: 35px;
+    //             font-size: @h4FontSize;
+    //             color: @Bluecolor;
+    //             cursor: pointer;
+    //         }
+    //     }
+    // }
+    .select{
+        overflow: hidden;
+        margin-bottom: 43px;
+        span{
+            float: left;
+            text-align:center;
+            width: 154px;
+            height: 42px;
+            color:#409efe;
+            line-height:42px;
+            border:1px solid #409efe;
+            cursor: pointer;
+            // border-radius: 4px;
+        }
+        span:nth-child(1){
+            border-top-left-radius:4px;
+            border-bottom-left-radius:4px;
+        }
+        span:nth-child(2){
+            border-top-right-radius:4px;
+            border-bottom-right-radius:4px;
+        }
+        .active{
+            color:#fff;
+            background-color:#409efe;
+        }
+    }
+    .code_warp {
+        // .clearfix();
+        display: flex;
+        align-items: center;
+        .el-form-item {
+            width:70%;
+        }
+        .inp .el-input__inner{
+            border-radius:4px 0 0 4px;
+        }
+        .btn_code {
+            position: relative;
+            width: 30%;
+            font-size: 12px;
+            // margin-top: 23px;
+            // margin-left: 20px;
+            cursor: pointer;
+            .el-input__inner{
+                cursor: pointer;
+                color: #409efe;
+                background: #2b2b2b;
+                height: 36px;
+                border-left: none;
+                line-height: 34px;
+                margin-top: 7px;
+                border-radius:0 4px 4px 0;
+            }
+            .lines{
+                position: absolute;
+                top: 50%;
+                left: 0;
+                color: #aaa;
+                transform: translateY(-12%);
+                z-index: 1;
+            }
+            .el-input__inner:focus{
+                border:none;
+                height: 34px;
+                line-height: 34px;
+            }
+        }
+    }
+    //滑块样式
+//  .outer {
+//      position: relative;
+//      margin: 2px auto;
+//      height: 44px;
+//      line-height: 44px;
+//      background: @Infocolor;
+//  }
+//  .outer span,
+//  .filter-box,
+//  .inner {
+//      position: absolute;
+//      top: 0;
+//      left: 0;
+//  }
+//  .outer span {
+//      display: block;
+//      padding: 0 0 0 36px;
+//      width: 100%;
+//      height: 100%;
+//      color: #fff;
+//      text-align: center;
+//  }
+//  .filter-box {
+//      width: 0;
+//      height: 100%;
+//      background: @Bluecolor;
+//      z-index: 9;
+//  }
+//  .outer.act span {
+//      padding: 0 36px 0 0;
+//  }
+//  .inner {
+//      width: 50px;
+//      height: 44px;
+//      text-align: center;
+//      cursor: pointer;
+//      font-family: "宋体";
+//      z-index: 10;
+//      font-weight: bold;
+//      color: #929292;
+//      background: #CBD6DF;
+//  }
+//  .outer.act .inner {
+//      color: green;
+//  }
+//  .outer.act span {
+//      z-index: 99;
+//  }
+.VelWarp{
+        .verify-btn{display: none;}
+        .verify-bar-area{
+            width: 100% !important;
+             background-color: #909399 !important;
+             border: 1px solid #909399;
+             .verify-msg{
+                 color: #FFFFFF;
+             }
+        }
+        .verify-move-block{
+             background-color: #cbd6df;
+             box-shadow: none;
+        }
+       .verify-bar-area .verify-move-block:hover{
+            background-color: #fff !important;
+        }
+
+    }
+    //弹出框样式
+    .model_warp {
+        .model_login {
+            position: relative;
+            .el-input {
+                .btn_login {
+
+                    position: absolute;
+                    top: 6%;
+                    right: 1%;
+                    font-size: @h6FontSize;
+                    color: @Bluecolor;
+                    cursor: pointer;
+                    .el-input__inner{
+                         //border: none;
+                         width: 100px;
+                         height: 35px;
+                         line-height: 35px;
+                         font-size: @h6FontSize;
+                         color: @Bluecolor;
+                    }
+                }
+
+            }
+        }
+    }
+}

@@ -1,0 +1,222 @@
+// 公用背景颜色
+@Bluecolor: #409EFF;
+@Successcolor: #67C23A;
+@Warningcolor: #E6A23C;
+@Warningcolor2: #FBF6D9;
+@Dangercolor: #F56C6C;
+@Infocolor: #909399;
+@wrapGrayColor:#F4F3F8;
+@redColor:#F55D54;
+@main: #409EFF;
+@header_color: #1c1b29;
+@DackgroundColor:#f2f3f8;
+@baiColor:#fefefe;
+// 公用字体颜色
+@zhuColor: #303133;
+@chiColor: #606266;
+@cunColor: #909399;
+@zhanColor: #C0C4CC;
+@headerColor: #c5cce8;
+@footerColor:#b5bada;
+// 公用边框颜色
+@border1: #DCDFE6;
+@border2: #E4E7ED;
+@border3: #EBEEF5;
+@border4: #F2F6FC;
+@border5: #0A1B69;
+// 公用字体大小
+@hFontSize: 34px;
+@hFontSize1: 32px;
+@hFontSize2: 24px;
+@h1FontSize: 20px;
+@h2FontSize: 18px;
+@h3FontSize: 16px;
+@h4FontSize: 14px;
+@h5FontSize: 13px;
+@h6FontSize: 12px;
+
+@zhifubaoColor:#2D9CDA;
+
+@header_height:60px;
+@index_width:1675px;
+/*
+ 
+//清除浮动
+ * */
+
+.main{
+    background-color: #f2f3f8;
+    width: 100%;
+    min-width: 1280px;
+    height: 100%;
+}
+
+@support-ie-version: 7;
+.clearfix() {
+    &:before,
+    &:after {
+        display: table;
+        content: "";
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+.clearfix() when (@support-ie-version < 8) {
+    *zoom: 1;
+}
+
+
+/**
+ *     
+ *  块元素居中函数
+ */
+
+.contents(@w) {
+    width: @w;
+    margin: 0 auto;
+}
+
+//页面主题部分框架
+.main() {
+    .contents(1240px);
+    padding: 80px 0 20px 40px;
+    background: #fff;
+}
+
+//高和行高合并
+.ht(@h) {
+    height: @h;
+    line-height: @h;
+}
+
+//登录注册头部样式公用
+.cont_header() {
+    .welcome_reg {
+        font-size: 28px;
+        color: @zhuColor;
+        margin-bottom: 20px;
+    }
+}
+
+//表单样式
+.clform() {
+    .el-form-item__label {
+        line-height: 24px;
+        font-size: @h6FontSize;
+    }
+    .el-form--label-top .el-form-item__label {
+        padding: 0;
+    }
+    .el-input__inner {
+        .ht(44px);
+    }
+}
+
+.prompt(@h) {
+    float: left;
+    width: 50%;
+    padding: 50px 0 0 80px;
+    .warp_prompt {
+        p {
+            line-height: @h;
+            color: @cunColor;
+            font-size: @h6FontSize;
+        }
+    }
+}
+
+// 清除浮动
+.Scavengingfloating(){
+    overflow: hidden;
+    zoom:1;
+}
+/*1280px宽度*/
+.breadth(){
+    width: 1280px;
+    margin: 0 auto;
+}
+// 页面主体居中
+.public_wrapper {
+    .breadth();
+    padding:20px 0;
+}
+//盒子公用样式
+.public_box(@h) {
+    .main_style {
+        height: @h;
+        border-radius: 10px;
+        background: #FFFFFF;
+        .header_public_style {
+            .ht(60px);
+            background: #F8F7FC;
+            .title {
+                color: @chiColor;
+                font-size: @h2FontSize;
+                padding-left: 30px;
+            }
+        }
+        .cont_public_style {
+            padding: 30px 30px 20px;
+        }
+    }
+}
+
+//个人中心（安全中心公用样式） (star)
+.security_main_title(@h) {
+    .ht(@h);
+    background: #fff;
+    border-radius: 5px;
+    margin-top: 20px;
+    padding-left: 30px;
+    font-size: @h1FontSize;
+    color: @zhuColor;
+    margin-bottom: 4px;
+}
+
+.security_cont() {
+    padding: 0 30px;
+    background: #fff;
+    .lis {
+        .ht(54px);
+        color: @cunColor;
+        font-size: @h3FontSize;
+        border-bottom: 1px solid @border3 ;
+        .name,
+        .num {
+            display: inline-block;
+            text-align: left;
+            width: 250px;
+        }
+        .num{
+            width: 31%;
+        }
+    }
+}
+
+//个人中心（安全中心公用样式） (end)
+//止盈止损 css
+.sliderLimitWarp{
+    padding-top: 18px;
+    p{
+        color: @cunColor;
+        font-size: 12px;
+    }
+    .clearfix();
+    .zhiying{
+        float: left;
+        width: 45%;
+        
+    }
+    .zhishun{
+        float: right;
+        width: 45%;
+        padding-right: 10px;
+          
+        
+    }
+    .zhiying{
+//      padding-right: 2%px;
+    }
+}

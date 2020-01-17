@@ -1,0 +1,226 @@
+.heyuey { 
+
+    // 合约交易夜间
+    .exchange {
+        .transaction{
+            // background: @home101832;
+            .el-input__inner{
+                background-color: @home192241 !important;
+                color: #E8E9ED !important;
+                border-color: @border3b4c6e !important;
+               
+            }
+            .is-disabled{
+                .el-input__inner{
+                    background: #21263a !important;
+                }
+            }
+        }
+        // border-top:10px solid @home101832 !important;
+        .el-table, .el-table__expanded-cell{
+            background-color: transparent;
+
+        }
+        background-color:@exchangebg;
+        .rise {
+            color: @rise;
+        }
+        .fall {
+            color: @fall;
+        } // border-top: 10px solid @homeborderNav;
+        .exchange_nav {
+            // border-right: 10px solid @home101832;
+            // border-left: 10px solid @homeborderNav;
+            .nav_list {
+                // background-color: @homeBg;
+                .Assets_type_box .img {
+                    background-image: url('./image/Tradingbackground.png');
+                }
+                .Assets_type_box .img2 {
+                    background-image: url('./image/Tradingbackground_ye.jpg');
+                }
+                .currency_header {
+                    // border-bottom: 5px solid @homeborderNav;
+                    color: @homeColorh3;
+                    background: @home192241;
+                    p {
+                        border-bottom: 2px solid #409eff;
+                        color: #409eff;
+                    }
+                }
+                .currency_surface_header {
+                    background-color: @home101832 !important;
+                    height: 48px;
+                    line-height: 48px;
+                    .currency_surface_list {
+                        color: #dfe7ff;
+                    }
+                }
+                .MainArea_box {
+                    background: @home192241;
+                    .MainArea_main,
+                    .Innovate_main {
+                        .MainArea_list,
+                        .Innovate_list {
+                            border-bottom: 1px solid #2e3356;
+                            p {
+                                color: @homeColorh4;
+                            }
+                        }
+                        .active {
+                            background-color: @home192241;
+                        }
+                    }
+                }
+                .Innovate_box {}
+                .announcementWarp {
+                    border: 1px solid #48557a;
+                    background: #192241;
+                    .tradingNotice {
+                        h2 {
+                            color: @homeColorh2;
+                            // border-top: 5px solid @home101832;
+                            // border-bottom: 5px solid @home192241;
+                            background: @home192241;
+                        }
+                        .announcementList {
+                            .list {
+                                border-bottom: 1px solid @borderColor;
+                                .title {
+                                    color: @homeColorh4;
+                                }
+                                .time {
+                                    color: #909399;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .exchange_mian {
+            // border-right: 10px solid @homeborderNav;
+            // background: @home101832;
+            .exchange_box {
+                background-color: #171B2C;
+                .Placeanorder_header_box {
+                    border-bottom: 5px solid @homeborderNav;
+                    background: #fff;
+                    .Placeanorder_list_header {
+                        color: @homeColorh2;
+                    }
+                    .Placeanorder_list_conent {
+                        color: #909399;
+                        p {}
+                    }
+                    li,
+                    p {}
+                }
+            }
+            .transaction {
+                // background-color:@home101832;
+                // border-bottom: 10px solid @home101832;
+                .transaction_box {
+                    background:@home141d3c;
+                    .el-tabs__header{
+                        border-bottom: 1px solid @border3b4c6e;
+                    }
+                    .el-tab-pane {}
+                    .el-button {}
+                    .number {}
+                    .Purchase,
+                    .Sellout {
+                        .coinName{
+                            color: #dddddd;
+                        }
+                        .stoploss,
+                        .stopwin {
+                            h2 {
+                                color: #eee;
+                            }
+                           
+                        }
+                        .numberSmall,
+                        .numberLarge,
+                        .jiaoyi,
+                        .keyong {
+                            color: @homeColorh3;
+                        }
+                        .el-button--success {
+                            background-color: @rise;
+                        }
+                        .el-button--danger {
+                            background-color: @fall;
+                        }
+                        .el-input-group__append,
+                        .el-input-group__prepend {
+                            background-color: @home192241;
+                            border: 1px solid @homeBg;
+                        }
+                        .el-slider__button {
+                            border: solid 2px @homeColorh4;
+                            background-color: @homeBg;
+                        }
+                        p {
+                            color: @homeColorh3;
+                        }
+                    }
+                }
+                .transaction_main {
+                    border-color: @home141d3c;
+                    background: @home141d3c;
+                    .transaction_header {
+                        color: @homeColorh4;
+                        border-bottom: 1px solid @homeBg;
+                    }
+                    .transaction_nav,
+                    .PurchaseData_list,
+                    .SelloutData_list {}
+                    .transaction_nav {
+                        p {
+                            color: #909399;
+                        }
+                    }
+                    .PurchaseData{
+                        border-bottom: 2px solid @border3b4c6e;
+                    }
+                    .PurchaseData,
+                    .SelloutData {
+                        border-top: 1px solid @homeBg;
+                        color: #909399;
+                        .PurchaseData_list,
+                        .SelloutData_list {
+                            p {}
+                        }
+                    }
+                }
+            }
+        }
+        .Commission {
+            background-color: @homeBg;
+            .Commission_header {
+                color: @homeColorh2;
+            }
+            .Commission_mian {
+                .el-tabs__item {}
+                .el-tabs--top .el-tabs__item.is-top:last-child {}
+            }
+            .el-table,
+            .el-table__expanded-cell {
+                background-color: @homeBg;
+            }
+            .el-table th,
+            .el-table tr {
+                background-color: @homeBg;
+                &:hover {
+                    background-color: @homeBg;
+                }
+            }
+            .el-table__row {
+                &:hover {
+                    background-color: @homeBg;
+                }
+            }
+        }
+    }
+}

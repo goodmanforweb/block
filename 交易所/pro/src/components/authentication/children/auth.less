@@ -1,0 +1,280 @@
+@import '../../../assets/public.less';
+.identity .identitymian .from .el-input .ic-img-cn::after{
+    color:#f39a22 !important;
+}
+.identity {
+    font-family: MicrosoftYaHei;
+    width: 1280px;
+	margin: 0 auto;
+    min-height: 440px;
+    // background: #2b2b2b;
+    padding: 20px 0 190px 0;
+    color: #fff;
+    .imgWarp{
+        border-radius: 4px;
+        background-color:@cardBg;
+    }
+    .efi--roleCard1{
+        box-sizing: border-box;
+        display: flex;
+        align-items: flex-end;
+        padding: 20px 0 15px 31px;
+        font-size: 14px;
+        color: #fff;
+        .authenTication{
+            .el-form-item__content{
+                margin: 0 !important;
+            }
+        }
+        
+        .el-input__inner{
+            background-color: @homeBg;
+            border: none;
+        }
+        span{
+            margin-right: 40px;
+        }
+        .name1{
+            margin-right: 130px;
+            
+        }
+        .identity1{
+            .el-input{
+                width: 540px;
+            }
+        }
+    }
+    .efi--roleCard{
+        box-sizing: border-box;
+        display: flex;
+        align-items: flex-end;
+        padding: 37px 0 23px 31px;
+        height: 156px;
+        font-size: 14px;
+        color: #fff;
+       
+        .flx-it1{
+            align-self: flex-start;
+            // 定宽不换行防止英文版文字过长挤压盒子
+            width: 84px;
+            white-space: nowrap;
+            
+        }
+        .box{
+            margin-left: 258px;
+            padding-right: 20px;
+            color: #eee;
+            line-height: 1.4em;
+        }
+        .el-input1{
+            margin-left: 190px;
+            margin-right: 15px;
+        }
+    }
+    .el-form-item__label{
+        color: #fff
+    }
+    .identitymian {
+        .title{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 31px; 
+            color: #d1d1d1;
+            font-size: 16px;
+            background: @cardBg;
+            margin-bottom: 1px;
+            font-weight: 400;
+            height: 60px;
+            border-radius: 4px;
+            line-height: 60px;
+        }
+        .from {
+            background: #2b2b2b;
+            margin-top: 1px;
+            .input-with-select {
+                width: 666px;
+                margin-left: -100px;
+                .el-input--suffix .el-input__inner {
+                    padding: 0px;
+                }
+            }
+            .cutOff{
+                margin: 0 auto;
+                display: block;
+                width:1230px;
+                height:1px;
+                background:rgba(67,69,72,1);
+            }
+            // .efi--roleCard1{
+            //     .el-input{
+            //         background-color: red;
+            //     }
+            // }
+            .el-input{
+               
+                width: 274px;
+                border-radius: 4px;
+                //上传图标
+                .ic-img{
+                    position: absolute;
+                    left: 180px;
+                    bottom: 0; //取消会错位
+                    width: 14px;
+                    height: 12px;
+                    color:#f39a22;
+                    background:url('../../../assets/img/lALPDgQ9q6om0GYMDg_14_12.png') no-repeat ;
+                    background-size: 100% 100%;
+                    cursor: pointer;
+                }
+                .ic-img-cn::after{
+                    content: "上传图片";
+                    display:block;
+                    width: 56px;
+                    color: #f39a22;
+                    position: absolute;
+                    left: 35px;
+                }
+                .ic-img-en::after{
+                    content: "Upload photo";
+                    display:block;
+                    width: 100px;
+                    color: #f39a22;
+                    position: absolute;
+                    left: 35px;
+                }
+               
+                
+            }
+            .picture {
+                width: 165px;
+                height: 100px;
+                // line-height: 338px;
+                text-align: center;
+                position: relative;
+                .uploadicon {
+                    width: 165px;
+                    height: 97px;
+                    line-height: 70px;
+                    display: inline-block;
+                    background-repeat: no-repeat;
+                    background-size: 100% 100%;
+                }
+                .zhengmian{
+                    background-image: url('../../../assets/image/userCenter/zhengmian.png');
+                }
+                .beimian{
+                    background-image: url('../../../assets/image/userCenter/beimian.png');
+                }
+                .shouchi{
+                    background-image: url('../../../assets/image/userCenter/shouchishenfenz.png');
+                }
+                p {
+                    font-size: @h4FontSize;
+                    height: 32px;
+                    line-height: 32px;
+                    margin-top: -150px;
+                }
+                .imgbox {
+                    width: 100%;
+                    height: 100%;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                .uploader1,
+                .uploader2,
+                .uploader3,
+                .uploader4 {
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    top: 0px;
+                    div {
+                        width: 100%;
+                        height: 100%;
+                    }
+                    input {
+                        display: none;
+                    }
+                }
+            }
+            .el-input1 {
+                
+                position: relative;
+                .box {
+                    position: absolute;
+                    top: 140px;
+                    left: 586px;
+                    width: 560px;
+                    .list{
+                        color: #fff;
+                    }
+                }
+            }
+           
+        }
+    }
+    .payment {
+        margin-top: 22px;
+        .el-button {
+            width:120px;
+            height:40px;
+            background:rgba(42,100,243,1);
+            border-radius:4px;
+            color: #fff;
+            border: none;
+            outline: none;
+        }
+    }
+    
+}
+
+.el-select {
+    width: 100px;
+}
+
+//颜色
+// .mainy {
+//     .identity {
+//         .identitymian {
+//             .secondlyheadercss();
+//             .from {
+//                 .el-input {
+//                     background: @bgcolor293346;
+//                 }
+//                 .el-input__inner {
+//                     height: 50px;
+//                 }
+//                 .el-form-item__label {
+//                     line-height: 50px;
+//                 }
+//                 .input-with-select {
+//                     .el-input-group__append,
+//                     .el-input-group__prepend {
+//                         background-color: @bgcolor1a2332;
+//                         border-color: @bordercolor1a2332;
+//                     }
+//                     .el-input--suffix .el-input__inner {
+//                         color: @fontcolord6d7db;
+//                     }
+//                 }
+//                 .picture {
+//                     border: dotted 1px @bordercolor3b4c6e;
+//                     p {
+//                         color: @fontcolorffffff;
+//                     }
+//                 }
+//             }
+//         }
+//         .but {
+//             .el-button {
+//                 background: @bgcolorjb;
+//                 border: none;
+//                 height: 50px;
+//                 color: @fontcolorffffff;
+//             }
+//         }
+//     }
+// }

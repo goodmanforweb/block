@@ -1,0 +1,188 @@
+// 提币
+.ti_bit_wrapper {
+  background: #181b29;
+  .el-dialog{
+    .el-dialog__header{
+      background-color: #181b29;
+      padding: 20px;
+      span{
+        color: #fff;
+      }
+    }
+    .el-dialog__body{
+      background-color: @cardBg;
+      .el-input__inner{
+        background-color: #181b29;
+        // border: none;
+      }
+    }
+    .el-dialog__footer{
+      background-color: @cardBg;
+      .el-button--primary{
+        width: 81px;
+       border: none;
+        background-color: #2a64f3;
+      }
+      .btn3{
+       background-color: #ffa518;
+        width: 81px;
+        color: #fff;
+        border:none;
+
+      }
+    }
+  }
+  .ti_bit_container {
+    width: 1280px;
+    margin: 20px auto;
+    padding: 10px;
+    .titles {
+      color: #e0e0e0;
+      background: @cardBg;
+      height: 50px;
+      line-height: 50px;
+      margin: 0 auto;
+      h2 {
+        display: inline-block;
+        font-size: 18px;
+      }
+      .right {
+        float: right;
+        font-size: 18px;
+        font-weight: bold;
+        color: #2a64f3;
+        margin-right: 30px;
+        cursor: pointer;
+      }
+    }
+    .ti_top {
+      width: 900px;
+      margin: 0 auto;
+      margin-top: 20px;
+      .el-table {
+        th.is-leaf,
+        td {
+          border: none;
+        }
+        tr:hover > td {
+          background: none;
+        }
+        th,
+        td {
+          text-align: right;
+          &:first-child {
+            text-align: left;
+          }
+        }
+      }
+      .ti_bit_inner {
+        color: @cunColor;
+        font-size: @h4FontSize;
+        margin-top: 30px;
+        .addreSelect .el-form-item__content {
+          display: flex;
+          justify-content: space-between;
+          width: 82%;
+          el-form-item {
+            width: 400px;
+          }
+        }
+        .el-form-item__content {
+          .el-input {
+            width: 350px;
+            margin-right: 20px;
+          }
+          .el-input__inner {
+            height: 48px;
+            width: 350px;
+            border: 1px solid #2b2b2b;
+            background: @cardBg;
+            color: #ddd;
+          }
+        }
+        .el-form-item.is-required:not(.is-no-asterisk)
+          > .el-form-item__label:before {
+          display: none;
+        }
+
+        .el-form-item__label {
+          padding: 0;
+          color: #e5e5e5;
+        }
+        .el-select {
+          width: 100%;
+        }
+        .highMoney {
+          .colorBlue {
+            color: @Bluecolor;
+          }
+        }
+        .code_warp {
+          position: relative;
+          .clearfix();
+          .el-form-item {
+            float: left;
+          }
+          .btn_code {
+            // float:left;
+            position: absolute;
+            top: 40px;
+            left: 370px;
+            font-size: 12px;
+            width: 20%;
+            input {
+              cursor: pointer;
+              height: 50px;
+              border: none;
+              background: #2a64f3;
+              border-radius: 5px;
+              color: #fff !important;
+              font-size: 16px;
+            }
+          }
+          .el-form-item {
+            width: 75%;
+          }
+        }
+        .el-button--primary {
+          width: 50%;
+          height: 46px;
+          background: #87aaff;
+          color: #fff;
+          border: none;
+          margin-left: 50px;
+          margin-top: 20px;
+        }
+        .btn_sub {
+          .el-button {
+            width: 470px;
+            height: 50px;
+            background: rgba(42, 100, 243, 1);
+            border-radius: 4px;
+          }
+        }
+        .tiBit {
+          margin-top: 20px;
+          display: flex;
+          justify-content: space-between;
+          .left {
+            color: #ababab;
+            .list {
+              list-style: disc;
+              margin-left: 20px;
+              margin-top: 10px;
+              li {
+                margin-top: 10px;
+                color: #ababab;
+              }
+            }
+          }
+          .goBit {
+            height: 40px;
+            padding: 10px 80px;
+          }
+        }
+      }
+    }
+  }
+}

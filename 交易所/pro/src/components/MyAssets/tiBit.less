@@ -1,0 +1,152 @@
+// 提币
+.ti_bit_wrapper { 
+    background: @wrapGrayColor;
+    .title_link{
+        color: @Bluecolor;
+        cursor: pointer;
+    }
+    
+    .ti_bit_container {
+        // .main();
+        // padding-top: 20px;
+        // background: none;
+        .public_wrapper();
+        .ti_top {
+            margin-top: 20px;
+            .title_link {
+                display: inline-block;
+                float: right;
+                line-height: 30px;
+                a {
+                    color: @Bluecolor;
+                    &:first-child {
+                        margin-right: 20px;
+                    }
+                }
+            }
+            .el-table {
+                th.is-leaf ,td{
+                    border:none;
+                }
+                tr:hover > td {
+                    background:none;
+                }
+                th,td {
+                    text-align:right;
+                    &:first-child {
+                        text-align:left;
+                    }
+                }
+            }
+            .ti_bit_inner {
+                color: @cunColor;
+                font-size: @h4FontSize;
+                margin-top:30px;
+                .addreSelect .el-form-item__content{
+                    display:flex;
+                    justify-content:space-between;
+                    .writeAdd {
+                        width: 70%;
+                    }
+                    .selectAdd {
+                        width: 28% !important;
+                    }
+                }
+                
+                .el-form-item__label {
+                    padding:0;
+                }
+                .el-select {
+                    width: 100%;
+                }
+                .highMoney {
+                    .colorBlue {
+                        color:@Bluecolor;
+                    }
+                    // .right_text {
+                    //     position:absolute;
+                    //     top:-45px;
+                    //     right:0;
+                    // }
+                }
+                .code_warp{
+                    .clearfix();
+                    .el-form-item {
+                        float: left; 
+                    }
+                    .btn_code{
+                       float:right;
+                       width: 30%;
+                       font-size: 12px;
+                       margin-top: 40px;
+                       input {
+                        cursor:pointer;
+                    }    
+                }
+                .el-form-item{
+                    width: 65%;
+                }
+            }
+
+
+                // .input {
+                //     width: 100%;
+                //     border: 1px solid @border1;
+                //     border-radius: 4px;
+                //     height: 40px;
+                //     line-height: 40px;
+                //     margin-top: 15px;
+                //     margin-bottom: 20px;
+                //     color: @cunColor;
+                //     input {
+                //         width: 80%;
+                //         border: none;
+                //         outline: none;
+                //         height: 35px;
+                //         font-size: @h3FontSize;
+                //         margin-left: 10px;
+                //     }
+                //     span {
+                //         float: right;
+                //         margin-right: 10px;
+                //         right: 10px;
+                //     }
+                // }
+                .money {
+                    display: flex;
+                    justify-content: space-between;
+                    .section {
+                        width: 49%;
+                        .div {
+                            background: @border4;
+                            padding: 15px 10px;
+                            margin-top: 10px;
+                            display:flex;
+                            justify-content:space-between;
+                        }
+                    }
+                }
+                .tiBit {
+                    margin-top: 20px;
+                    display: flex;
+                    justify-content: space-between;
+                    .left {
+                        .list {
+                            list-style: disc;
+                            margin-left: 20px;
+                            margin-top:10px;
+                            li {
+                                margin-top: 10px;
+                            }
+                        }
+                        
+                    }
+                    .goBit {
+                        height: 40px;
+                        padding: 10px 80px;
+                    }
+                }
+            }
+        }
+    }
+}

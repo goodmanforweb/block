@@ -1,0 +1,121 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>用户注册</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+	<link rel="stylesheet" type="text/css" href="css/weui.min.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery-weui.min.css">
+    <link rel="stylesheet" type="text/css" href="css/login.css">
+    <!-- <script charset="UTF-8" type="text/javascript" src="js/jquery-weui.min.js"></script> -->
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	
+	
+    <script type="text/javascript" src="js/layer_mobile/layer.js"></script>
+    <script type="text/javascript" src="js/md5.js"></script>
+	<!--[if lte IE 8]> 
+	    <script src="html5shiv.min.js"></script> 
+	    <script src="respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+	<div id="logo">
+		Zeus
+	</div>
+	<!-- <div class="tab">
+		<div data-type="mobile" id="mobile" class="item">
+			手机注册
+		</div>
+		<div data-type="email" id="email" class="item">
+			邮箱注册
+		</div>
+		<div class="block"></div>
+	</div> -->
+	<form id="myform" >
+
+		<!-- <div class="mcode-box">
+			<span class="mcode-text">+86</span>
+			<img src="./img/xuanze.png" alt="">
+
+		</div> -->
+		<ul class="dropDown"> 
+				<li data-mcode="86">
+					<span>中国 &nbsp;CN</span>
+					<span>0086</span>
+				</li>
+				<li data-mcode="33">
+					<span>法国 &nbsp;FR</span>
+					<span>0033</span>
+				</li >
+				<li data-mcode="49">
+					<span>德国 &nbsp;DE</span>
+					<span>0049</span>
+				</li>
+				<li data-mcode="852">
+					<span>香港 &nbsp;HK</span>
+					<span>00852</span>
+				</li>
+				<li data-mcode="91">
+					<span>印度 &nbsp;IN</span>
+					<span>0091</span>
+				</li>
+				<li data-mcode="81">
+					<span>日本 &nbsp;JP</span>
+					<span>0081</span>
+				</li>
+				<li data-mcode="60">
+					<span>马来西亚 &nbsp;MY</span>
+					<span>0060</span>
+				</li>
+				<li data-mcode="63">
+					<span>菲律宾 &nbsp;PH</span>
+					<span>0063</span>
+				</li>
+				<li data-mcode="7">
+					<span>俄罗斯 &nbsp;RU</span>
+					<span>007</span>
+				</li>
+				<li data-mcode="65">
+					<span>新加坡 &nbsp;SG</span>
+					<span>0065</span>
+				</li>
+				<li  data-mcode="82">
+					<span>韩国 &nbsp;KR</span>
+					<span>0082</span>
+				</li>
+				<li  data-mcode="886">
+					<span>台湾 &nbsp;TW</span>
+					<span>00886</span>
+				</li>
+				<li  data-mcode="66">
+					<span>泰国 &nbsp;TH</span>
+					<span>0066</span>
+				</li>
+				<li  data-mcode="44">
+					<span>英国 &nbsp;UK</span>
+					<span>0044</span>
+				</li>
+				<li  data-mcode="1">
+					<span>美国 &nbsp;US</span>
+					<span>001</span>
+				</li>
+		</ul>
+		<input class="mobile" type="text"  name="phone" required="required" >
+		<div class="code">
+		    <input type="text" placeholder="请输入验证码" name="code" required="required" class="fl">
+			<span class="fr" id="code">发送验证码</span>
+		</div>
+		<!-- <input type="text" placeholder="请输入用户昵称" required="required" name="nickname"> -->
+		<input type="password" placeholder="8-12位字符，不能为纯数字" required="required" name="pwd">
+		<input type="password" placeholder="确定输入密码" required="required" name="paw2">
+		<input type="text" placeholder="邀请码" required="required" name="tjuser" id="tjuser" disabled="disabled">
+		<!-- <div id="yinsi">
+		 	<input name="agree" type="checkbox" value="1" class="text"  id="check" checked/>&nbsp;
+		 	<span>我已阅读和同意<span id='btnBook'>《服务协议及隐私条款》</span></span>
+		</div> -->
+		<div type="submit" id="submit">注&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;册</div>
+	</form>
+</body>
+<script type="text/javascript" src="js/reg.js"></script>
+</html>

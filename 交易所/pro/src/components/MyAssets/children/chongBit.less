@@ -1,0 +1,141 @@
+// 充币
+.cbCodeDiv {
+    width: 200px;
+    height: 200px;
+    margin:20px auto;
+    img{
+        width: 100%;
+        height:100%;
+    }
+}
+.chong_bit_wrapper {
+    background: #181b29 ;
+    .chong_bit_container {
+        width: 1280px;
+        padding: 10px;
+        margin-bottom: 20px;
+        .public_wrapper();
+        .chong_bit_header {
+            height: 60px;
+            line-height: 60px;
+            color: #fff;
+            padding-left: 30px;
+            background:@cardBg;
+            .title{
+                .right{
+                    float: right;
+                    font-size:18px;
+                    font-weight:bold;
+                    color:rgba(42,100,243,1);
+                    margin-right: 30px;
+                }
+            }
+        }
+        .chong_bit_code{
+            color: #fff;
+            margin: 20px 0;
+            p{
+                display: inline;
+                margin-left: 15px;
+               
+            }
+            a{
+                color: #f39a22;
+            }
+        }
+        .chong_top {
+            margin-top: 20px;
+            margin-bottom:80px;
+            .right_title {
+                color: #fff;
+                font-size: 16px;
+                height: 50px;
+                line-height: 50px;
+            }
+            // .title_link {
+            //     display: inline-block;
+            //     float: right;
+            //     line-height: 30px;
+            //     a {
+            //         color: @Bluecolor;
+            //         &:first-child {
+            //             margin-right: 20px;
+            //         }
+            //     }
+            // }
+            .el-table td, .el-table th.is-leaf {
+                border-bottom:none;
+            }
+            #addInput {
+                width: 80%;
+                height: 60px;
+                line-height: 60px;
+                padding-left: 20px;
+                border:none;
+                color: #fff;
+                background:@cardBg;
+                outline: none;
+            }
+            .right {
+                line-height: 60px;
+            }
+            .chong_bit_block {
+                margin-top:30px;
+                .address {
+                    display: flex;
+                    justify-content: space-between;
+               
+                    margin-top: 20px;
+                    .left {
+                        font-size: @h1FontSize;
+                        color: @main;
+                    }
+                    .right span {
+                        display: inline-block;
+                        padding-right: 150px;
+                        color: #f39a22 !important;
+                        cursor: pointer;
+                    }
+                }
+                .public_font {
+                    color: #fff;
+                    font-size: @h4FontSize;
+
+                }
+                .seeRecord {
+                    margin-top:30px;
+                    margin-bottom:20px;
+                    a {
+                        color: @main;
+                    }
+                } 
+                .address {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-top: 20px;
+                    .left {
+                        font-size: @h1FontSize;
+                        color: @main;
+                    }
+                    .right span {
+                        display: inline-block;
+                        margin-left: 20px;
+                        color: @Bluecolor;
+                        cursor: pointer;
+                    }
+                }
+                .list {
+                    list-style: disc;
+                    margin-left: 20px;
+                    margin-top:10px;
+                    li {
+                        padding: 5px 0;
+                        color: #bbbbbb;
+                        font-size: @h4FontSize;
+                    }
+                }
+            }
+        }
+        height:700px;
+    }
+}

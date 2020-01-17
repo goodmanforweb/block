@@ -1,0 +1,51 @@
+// 公告列表
+.notice_list_wrapper {
+    background: @wrapGrayColor;
+    width: 1200px;
+    margin: 0 auto;
+    .list_container {
+        .public_wrapper();
+        .title {
+            font-weight: bold;
+            font-size: @h1FontSize;
+        }
+        .list_content {
+            margin-top: 40px;
+            min-height:500px;
+            .content {
+                min-height:500px;
+                &>li a {
+                    display: flex;
+                    justify-content: space-between;
+                    border-bottom: 1px solid #ebeef5;
+                    padding: 20px 0;
+                    color: #909399;
+                    cursor: pointer;
+                    font-size:@h3FontSize;
+                }
+                .left {
+                    .tag {
+                        background: #409eff;
+                        color: #fff;
+                        padding: 4px 10px;
+                        border-radius: 5px;
+                        margin-right: 10px;
+                    }
+                }
+            }
+            .button_pages{
+                text-align: right;
+                padding: 20px 0;
+                span {
+                    color: #909399;
+                    padding: 0 10px;
+                    font-size:@h3FontSize;
+                    cursor:pointer;
+                    &:hover {
+                        color:@Bluecolor;
+                    }
+                }
+            }
+        }
+    }
+}

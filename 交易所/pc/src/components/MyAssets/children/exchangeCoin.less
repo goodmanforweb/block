@@ -1,0 +1,197 @@
+.exchangeCoin {
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: #171717 !important;
+    .wrap {
+        padding: 10px;
+        .breadth();
+        width: 1280px;
+        .exchange_title {
+            height: 55px;
+            line-height: 55px;
+            color: #c7c7c7;
+            font-size: 20px;
+            text-indent: 15px;
+            margin-bottom: 10px;
+            padding-left: 30px;
+            background: #2b2b2b;
+        }
+        .exchangeCont {
+            box-sizing: border-box;
+            padding-top: 20px;
+            .title {
+                height: 50px;
+                line-height: 50px;
+                position: relative;
+                &:after {
+                    content: '';
+                    display: block;
+                    width: 98%;
+                    height: 1px;
+                    position: absolute;
+                    left: 1%;
+                    bottom: 0;
+                }
+                span {
+                    display: inline-block;
+                    width: 49%;
+                    text-indent: 20px;
+                    color: #ddd;
+                    &:last-child {
+                        text-align: right;
+                    }
+                }
+            }
+            .exchangeForm {
+                box-sizing: border-box;
+                width: 900px;
+                padding: 20px 25px 50px;
+                margin: 0 auto;
+                .foom{
+                    width: 850px;
+                }
+                .log{
+                    width: 415px !important;
+                    float: left;
+                    .el-select{
+                        width: 415px;
+                        float: right;
+                    }
+                    .el-input{
+                        width: 415px;
+                    }
+                }
+                .lg{
+                    width: 415px;
+                    float: right;
+                }
+                .numleft{
+                    float: left;
+                }
+                .numright{
+                    float: right;
+                    width: 415px;
+                    height: 86px;
+                    padding-top: 50px;
+                    font-size:14px;
+                    font-weight:400;
+                    color:#BBBBBB;
+                }
+                .clearfix{
+                    width: 100% !important;
+                    text-align: center;
+                    button{
+                        width:470px;
+                        height:50px;
+                        background:rgba(42,100,243,1);
+                        border-radius:4px;
+                    }
+                }
+                .el-form-item{
+                    width: 415px;
+                }
+                .el-input__inner {
+                    // width: 400px;
+                  background: #171717;
+                  border: 1px solid #2b2b2b;
+                  color: #dedede;
+                }
+                .el-form-item__label {
+                    padding: 0;
+                    line-height: 46px;
+                    color: #dedede;
+                    font-size: 14px;
+                }
+                .el-form-item__content p {
+                    color: #ccc;
+                    position: absolute;
+                    right: 10px;
+                    top: 0px;
+                }
+                .canUse {
+                    text-align: right;
+                    font-size: @h4FontSize;
+                    span {
+                        margin-right: 20px;
+                    }
+                }
+                .coinType {
+                    width: 100%;
+                }
+                .exchangeBtn {
+                    width: 300px;
+                    height: 40px;
+                    // float: right;
+                    background: #87aaff;
+                    color: #fff;
+                    border: none;
+                    margin-top: 20px;
+                }
+                .tit,
+                .tipsmsg {
+                    height: 30px;
+                    line-height: 30px;
+                    text-indent: 20px;
+                }
+                .tit {
+                    font-size: @h3FontSize;
+                }
+                .tipsmsg {
+                    position: relative;
+                    &:before {
+                        content: '';
+                        display: block;
+                        width: 10px;
+                        height: 10px;
+                        border-radius: 50%;
+                        position: absolute;
+                        left: 5px;
+                        top: 9px;
+                    }
+                }
+                .ziChan {
+                    text-align: right;
+                    box-sizing: border-box;
+                    padding-right: 20px;
+                    color: #dedede;
+                }
+            }
+        }
+    }
+    .historyList {
+        margin-top: 10px;
+        .listWarp {
+            height: 480px;
+            overflow-y: auto;
+        }
+        .el-table {
+          background: #171717;
+        }
+        .el-table .cell {
+          -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+          white-space: normal;
+          word-break: break-all;
+          line-height: 23px;
+          color: #e5e5e5;
+        }
+        .el-table td, .el-table th.is-leaf {
+            border-bottom: 1px solid #2b2b2b;
+        }
+        .el-table::before{
+            background-color: #171717;
+        }
+        .el-table th, .el-table tr{
+          background: #171717 !important;
+        }
+        .el-table tr{
+          background: #171717 !important;
+        }
+        .el-table th.is-leaf {
+          border-bottom: 1px solid #2b2b2b;
+        }
+        .el-table--enable-row-hover .el-table__body tr:hover>td {
+            background-color: #2b2b2b;
+        }
+    }
+}

@@ -1,0 +1,153 @@
+// 公告列表
+.notice_wrapper {
+    .zx_banner{
+        width: 100%;
+        min-width: 900px;
+        background-position-x: center;
+        height:450px;
+        margin-bottom:40px;
+        display:flex;
+        align-items:center;
+        div{
+            color:#fff;
+            margin-left:320px;
+            h5{
+              font-size:40px;
+              line-height:80px;
+            }
+            p{
+              font-size:20px;
+            }
+          }
+    }
+    .zx_banner-cn{
+        background:url(../../assets/image/userCenter/zixun-img.png) no-repeat;
+    }
+    .zx_banner-en{
+        background:url(../../assets/image/userCenter/zixun-img-E.png) no-repeat;
+    }
+    .notice_list_topImg{
+        width: 100%;
+        min-width: 1280px;
+        margin-bottom: 40px;
+    }
+  
+    .notice_list_wrapper {
+        display: flex;
+        width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+        // 
+          // 侧边导航
+    .notice_list_side{
+        margin-right: 58px;
+        max-width: 177px;
+        .el-radio-button {
+            // 按钮样式
+            .el-radio-button__inner{
+                margin-bottom: 1px;
+                width: 160px;
+                height: 40px;
+                background-color: @cardBg;
+                border:  @cardBg;
+                border-radius: 4px;
+                color: #BBBBBB;
+            }
+        }
+        .is-active{
+            .el-radio-button__inner{
+                background-color: @main !important;
+            } 
+        }
+    }
+    // 右侧主内容
+    .notice_list_content{
+        .nlc_ul{
+            margin-bottom: 31px;
+            width: 965px;
+            color: #fff;
+            
+            .nlc_ul_li{
+                display: flex;
+                align-items: center;
+                justify-content: center;  
+                cursor: pointer; 
+                margin-bottom: 10px;
+                width: 100%;
+                height: 164px;
+                background:@cardBg;
+                img{
+                    margin-right: 40px;
+                    width: 190px;
+                    height: 120px;
+                    border-radius: 6px;
+
+                }
+                p{
+                    margin-top: 10px;
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 3;
+                    overflow: hidden;
+                    width: 685px;
+                    line-height: 30px;
+                    font-size: 16px;
+                }
+                
+            }
+            .xtgg{
+                position: relative;
+                display:block;
+                height: 94px;
+                padding: 19px 46px 0 24px;
+                box-sizing: border-box;
+                cursor: initial;
+                p{  
+                    width: 100%;
+                }
+                a{
+                    position: absolute;
+                    width: unset;
+                    height: unset;
+                    bottom: 20px;
+                    right: 40px;
+                    color: @main;
+                    cursor: pointer;
+                }
+            }
+        }
+        // 分页样式
+        .el-pagination, .is-background{
+            margin-bottom: 68px;
+            text-align: right;
+            // .btn-prev, .btn-next{
+            //     width: 48px;
+            //     height: 24px;
+            //     background-color: #87AAFF;
+            //     color: #fff;
+            // }
+            .el-pager{
+                .number.active{
+                    &:hover{
+                        color: #fff;
+                    }
+                    background-color: @main;
+                }
+            }
+        }
+    }
+
+
+
+    }
+    .zxList-enter-active{
+        transition: all ease 2s
+    }
+    .zxList-enter, .zxList-leave-to
+    /* .slide-fade-leave-active 用于 2.1.8 以下版本 */ {
+      transform: translateX(10px);
+      opacity: 0;
+    }
+
+}
+

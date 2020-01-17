@@ -1,0 +1,426 @@
+.security_main {
+    .contents(1280px);
+    padding-top: 10px;
+    padding-bottom: 20px;
+    
+    .btns{
+      width: 25%;
+      margin-left: 15px;
+      height: 44px;
+    }
+    .btn-cancel{
+        background: @main;
+        color: #FFF;
+        min-width:80px;
+        border: 1px solid @main;
+    }
+    .security_main_title {
+        .security_main_title(70px);
+        background: #2b2b2b;
+        color: #eee;
+    }
+    .information {
+      background: #2b2b2b;
+      color: #fff;
+      .information_header {
+        color: #eee;
+        .security_main_title(60px);
+        font-size: @h2FontSize;
+      }
+      .information_cont {
+        .security_cont();
+        color: #eee;
+        .lis {
+          color: #ddd;
+          .modify {
+            width: 7%;
+            text-align: right;
+            color: #fff;
+            span{
+              color: #fff;
+              display: inline-block;
+              border: none;
+              background: #2A64F3;
+              text-align: center;
+              height: 32px;
+              line-height: 32px;
+              border-radius: 4px;
+              min-width: 80px;
+              padding: 0 10px;
+              box-sizing: border-box;
+            }
+          }
+        }
+      }
+    }
+    .authentication {
+      background: #2b2b2b;
+        .authentication_header {
+          color: #eee;
+          .security_main_title(60px);
+            font-size: @h2FontSize;
+          }
+        .authentication_cont {
+            .security_cont();
+              .lis{
+                color: #ddd;
+                .name{
+                  width: 20%;
+                }
+                .num{
+                  width: 20%;
+                }
+                .modify {
+                  display: inline-block;
+                  width: 20%;
+                  text-align: center;
+                  color: #fff;
+                  span{
+                    color: @main;
+                    font-size: 14px;
+                    display: inline-block;
+                    text-align: center;
+                    height: 32px;
+                    line-height: 32px;
+                    min-width: 80px;
+                    padding: 0 10px;
+                    box-sizing: border-box;
+                  }
+                }
+              }
+              .grade_warp {
+                width: 32%;
+                .box {
+                  display: inline-block;
+                  margin-right: 4px;
+                  width: 70px;
+                  height: 18px;
+                  background: @Bluecolor;
+                  position: relative;
+                  top: 4px;
+                }
+                .grade {
+                  margin-left: 25px;
+                }
+              }
+            .info {
+                width: 30%;
+                text-align: left;
+                display: inline-block;
+                font-size: @h6FontSize;
+            }
+            
+            .info {
+              width: 25%;
+              text-align: left;
+              display: inline-block;
+              color: #d6d6d6;
+              margin-left: 100px;
+              white-space: nowrap;
+            }
+            background: #2b2b2b;
+        }
+        .el-icon-warning {
+            color: @Dangercolor;
+        }
+        .el-icon-success {
+            color: @Successcolor;
+        }
+    }
+    .payment {
+      background: #2b2b2b;
+      .payment_header {
+          .security_main_title(60px);
+          color: @chiColor;
+          font-size: @h2FontSize;
+          line-height: 20px;
+          padding-top: 15px;
+          margin-top: 50px;
+          .tishi {
+            font-size: @h6FontSize;
+            line-height: 30px;
+            color: @chiColor !important;
+          }
+      }
+        .payment_cont {
+          .security_cont();
+          .obox {
+              padding-bottom: 10px;
+              font-size: @h6FontSize;
+              color: @cunColor;
+          }
+          .obox_null {
+              height: 100px;
+              text-align: center;
+              line-height: 28px;
+              .add_pay {
+                  color: @Bluecolor;
+                  cursor: pointer;
+              }
+          }
+            .obox_show {
+                .lis_warp{
+                    .lis{
+                      border-bottom: 1px solid #2b2b2b;
+                      .type,.mobile,.name{
+                          padding-left: 10px;
+                          display: inline-block;
+                          width: 22%;
+                          text-align: left;
+                          color: #ddd;
+                        }
+                        .mobile{
+                            width: 38%;
+                        }
+                        .name{
+                            width: 24%;
+                        }
+                        .eit{
+                            color: @main;
+                            cursor: pointer;
+                        }
+                        .el-switch{
+                            margin-left: 5px;
+                        }
+                        .icon.iconfont{
+                            position: relative;
+                            top: 2px;
+                        }
+                        .wx{
+                            color: #41C836;
+                            font-size: 18px;
+                            
+                        }
+                        .alipay{
+                            color: #2D9CDA;
+                            font-size: 18px;
+                        }
+                        .car{
+                            color: #F2994A;
+                            font-size: 20px;
+                        }
+                        .paypal{
+                            color: #2D9CDA;
+                            font-size: 20px;
+                        }
+                    }
+                } 
+                .add_play{
+                    cursor: pointer;
+                    height: 30px;
+                    line-height: 30px;
+                    color: #fff;
+                    font-size: @h6FontSize;
+                    width: 160px;
+                    margin:20px 0;
+                    background: #2A64F3;
+                    text-align: center;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+    .journal {
+        padding-bottom: 60px;
+        // background: #FFFFFF;
+        .no_list{
+            color: @cunColor;
+            font-size: @h6FontSize;
+            margin-top: 30px;
+            text-align: center;
+        }
+        .el-tabs__header {
+            .security_main_title(60px);
+        }
+        .el-tabs__nav {
+            border-bottom: none;
+        }
+        .el-tabs__content {
+            // background: #fff;
+            padding: 0 30px;
+            .lis_warp {
+                padding-bottom: 20px;
+                .nav,
+                .lis {
+                    .ht(50px);
+                    border-bottom: 1px solid @border3;
+                    span {
+                        display: inline-block;
+                        width: 24%;
+                        text-align: left;
+                        color: @cunColor;
+                        font-size: @h6FontSize;
+                    }
+                    .zt {
+                        text-align: right;
+                    }
+                }
+                .first {
+                    border-top: none;
+                }
+                .nav {
+                    border-bottom: none;
+                }
+            }
+        }
+        .el-pagination{
+            margin-top: 10px;
+            // background: #FFFFFF;
+            margin: 0;
+            text-align: right;
+        }
+    }
+   
+    //支付方式选择 （银行卡支付）
+    .back_card_main {
+        padding: 20px 10px;
+        .clform();
+        .el-input__inner {
+            height: 46px;
+            line-height: 46px;
+            // background: #eee;
+        }
+        .el-form-item {
+            margin-bottom: 20px;
+        }
+        .el-form-item__label{
+            line-height: 46px;
+            font-size: 14px;
+        }
+    }
+    .erweima {
+      border-radius: 3px;
+      padding-top:15px;
+      text-align: center;
+      font-size: @h6FontSize;
+      cursor: pointer;
+      margin-bottom: 12px;
+    } margin-bottom: 12px;
+    // }
+    .img_warp {
+      max-width: 446px;
+      max-height: 316px;
+      margin: 0 auto;
+      img {
+        height: 58px;
+        margin: 20px 0;
+      }
+      .getData.ali_img{
+        width: 200px;
+        height: 200px;
+      }
+    }
+    //上传二维码
+    .el-form-item__content {
+        text-align: center;
+    }
+    .webuploader-container {
+        position: relative;
+    }
+    .webuploader-element-invisible {
+        position: absolute !important;
+        clip: rect(1px 1px 1px 1px);
+        /* IE6, IE7 */
+        clip: rect(1px, 1px, 1px, 1px);
+    }
+    .webuploader-pick {
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+        color: @main;
+        font-size: @h6FontSize;
+        text-align: center;
+        overflow: hidden;
+        width: 100%;
+    }
+    .webuploader-pick-disable {
+        opacity: 0.6;
+        pointer-events: none;
+    }
+    // 商家弹框
+    .beMerchantDialog .el-dialog__body{
+      padding: 0px 20px 40px;
+  }
+  .beMerchantDialog{
+    .beMerchantdetail{
+      margin-bottom: 25px;
+      .dialog-content {
+        margin-top: 10px;
+        padding: 0 10px;
+        .pcolormain{
+          font-size: 18px;
+          line-height: 50px;
+          font-weight: 900;
+          color: @main;
+        }
+        .content_p{
+          line-height: 26px;
+          font-size: 14px;
+          color: #575d6a;
+        }
+      }
+    }
+  }
+  .el-dialog__header {
+    height: 50px;
+    line-height: 50px;
+    // background: #eee;	
+    .el-dialog__title {
+      float: left;
+      line-height: 50px;
+      font-size: 22px;
+      margin-left: 10px;
+      display: inline-block;
+      &:after{
+        display: block;
+        content:"";
+      }
+    }
+  }
+  .el-dialog--center .el-dialog__body {
+    text-align: initial;
+    padding: 5px 35px 30px;
+  }
+  .el-dialog--center .el-dialog__footer {
+    text-align: right;
+    margin-right: 20px;
+  }
+  .el-message-box__btns  {
+    text-align: center;
+  }
+  .closegoogle, .opengoogle{
+    .btn1 {
+      width: 90px;
+      color: #ddd;
+      border-color: #ddd;
+    }
+    .btn2 {
+      width: 90px;
+      background: @main;
+      color: #fff;
+      border: none;
+    }
+  }
+  
+
+
+  // 关闭谷歌验证
+  .closegoogle {
+    .send{
+      width: 100px;
+      height: 34px;
+      color: @main;
+      line-height: 34px;
+      position: absolute;
+      right: 0px;
+      top: 40px;
+      padding: 3px 12px;
+      cursor: pointer;
+      background: #f1f1f1
+    }
+    .el-input__inner {
+      background: #f1f1f1;
+      border: none;
+    }
+  }
+}

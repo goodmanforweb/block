@@ -1,0 +1,293 @@
+.FrenchCurrency {
+    width: 100%;
+    background-color: @DackgroundColor;
+}
+
+.frenchcurrency {
+    // .breadth();
+    margin-top: 10px;
+    width:100%;
+    background-color: @baiColor;
+    .frenchcurrency_main {
+        padding-top: 50px;
+        padding-left: 20px;
+        padding-right: 20px;
+        width:1240px;
+        margin:0 auto;
+        .frenchcurrency_header {
+            .Scavengingfloating();
+            margin-bottom: 50px;
+            .frenchcurrency_name {
+                float: left;
+                width: 200px;
+                border-right: solid 2px @border2;
+                border-left: solid 2px @border2;
+                margin-left: 20px;
+                text-align: center;
+                h1 {
+                    font-size: @h2FontSize;
+                    color: @zhuColor;
+                    line-height: 30px;
+                }
+                p {
+                    color: @Bluecolor;
+                    font-size: @h2FontSize;
+                    line-height: 30px;
+                }
+                h2 {
+                    font-size: @h3FontSize;
+                    color: @zhuColor;
+                    border-bottom: solid 1px @Bluecolor;
+                    display: inline-block;
+                    line-height: 30px;
+                    span {
+                        color: @zhanColor;
+                    }
+                }
+                h3 {}
+            }
+            .frenchcurrency_name1 {
+                // float: right;
+                // width: 300px;
+                .el-radio-button__inner {
+                    padding:0 !important;
+                    border:none;
+                    width: 190px;
+                    height:60px;
+                    line-height: 28px;
+                    font-size: 18px;
+                    p{
+                        text-align:left;
+                    }
+                    .tab_p1{
+                        font-size:18px;
+                    }
+                    .tab_p2{
+                        font-size:14px;
+                        color:#bbbbbb;
+                        span{
+                            color:#54c581;
+                        }
+                    }
+                }
+            }
+        }
+        // 弹窗
+        .tan{
+            border-radius:5px;
+            .el-dialog__header{
+                // padding:0;
+                padding:0 30px !important;
+                background:#eeeeee !important;
+                height:50px;
+                line-height:50px;
+            }
+            .el-dialog__body{
+                .el-form-item__label{
+                    color: #333333;
+                }
+                .el-form-item__content{
+                    position: relative;
+                    input{
+                        background:#eeeeee !important;
+                        border: none !important;
+                    }
+                    span{
+                        z-index: 99;
+                        right:15px;
+                        top:0;
+                        position: absolute;
+                        color:@main;
+                    }
+
+                }
+            }
+            .el-dialog__footer{
+                padding-left:110px;
+                .dialog-footer{
+                    display:flex;
+                    justify-content:space-between;
+                    button{
+                        width:45%;
+                        padding:0;
+                        height:40px;
+                        line-height:40px;
+                        border-color: @main !important;
+                    }
+                    .el-button--primary{
+                        background:@main !important;
+                    }
+                    .el-button--default{
+                        background:#fff !important;
+                        color:@main !important;
+                    }
+                }
+            }
+        }
+    }
+    .frenchcurrency_jiaoyi {
+        // border-top: solid 1px @border1;
+        border:none !important;
+        font-size: @h3FontSize;
+        .frenchcurrency_jiaoyi_header {
+            display:flex;
+            height: 60px;
+            justify-content:space-between;
+            .Scavengingfloating();
+            .frenchcurrency_jiaoyi_list {
+                .TableStyle();
+                color:#ffffff !important;
+                line-height: 45px;
+            }
+            .ReleaseWidth();
+        }
+        .Blocktrade {
+            min-height: 550px;
+            .Period_box {
+                height: 250px;
+                line-height: 250px;
+                text-align: center;
+                font-size: @h4FontSize;
+                color: @chiColor;
+            }
+            .Blocktrade_mian {
+                display:flex;
+                height: 100px;
+                border-bottom:1px solid #1A1A22;
+                cursor: pointer;
+                align-items: center;
+                justify-content: space-between;
+                .el-button--primary {
+                    padding: 10px 15px;
+                }
+                transition: all .3s;
+                .Scavengingfloating();
+                .ReleaseWidth();
+                &:hover {
+                    z-index: 1;
+                    border-radius: 4px;
+                    background: #17171E;
+                    box-shadow:0px 0px 6px 0px rgba(135,170,255,0.38);
+                    transition: all 0.4s;
+                    // transform: scale(1.02);
+                }
+                .Blocktrade_list {
+                    padding:0 !important;
+                    padding:10px 0 !important;
+                    display:flex;
+                    align-items:center;
+                    color:#d6d7db ;
+                    justify-content: center;
+                    h2{
+                        background:@main !important;
+                        border-color: @main;
+                        width: 90px;
+                    }
+                    .TableStyle();
+                    .Scavengingfloating();
+//                  line-height: 65px;
+//                  height: 65px;
+                    padding: 25px 0 0px 0;
+                    color: @chiColor;
+                    font-size: @h3FontSize;
+                    .Blocktrade_name {
+                        position: relative;
+                        // top: -9px;
+                        left: -9px;
+                        width: 38px;
+                        height: 38px;
+                        float: left;
+                        margin-left: 10px;
+                        span {
+                            width: 38px;
+                            height: 38px;
+                            line-height: 38px;
+                            background-color: @main !important; 
+                            border-radius: 50%;
+                            display: inline-block;
+                            color:#fff !important;
+                        }
+                        sub {
+                            position: absolute;
+                            bottom: 0px;
+                            right: 0px;
+                            border: solid 2px @baiColor;
+                            background-color: @Successcolor;
+                        }
+                    }
+                    .Blocktrade_name_ab {
+                        width: 270px;
+                        display: inline-block;
+                        line-height: 18px;
+                        text-align: left;
+                        color:#d6d7db ;
+                        span {}
+                        .icon-zhuanshi {
+                            color: @Warningcolor;
+                        }
+                    }
+                    .Blocktrade_num {}
+                    .icon-yinhangka {
+                        color: @Warningcolor;
+                    }
+                    .icon-zhifubao {
+                        color: @Bluecolor;
+                    }
+                    .icon-weixin {
+                        color: @Successcolor;
+                    }
+                    .Blocktrade_sell {}
+                }
+            }
+        }
+    }
+    .Period_main {
+        padding:30px 0;
+        .el-pagination {
+            text-align: right;
+        }
+    }
+}
+
+.TableStyle() {
+    float: left;
+    text-align: center;
+}
+
+.ReleaseWidth() {
+    .color {
+        color: @Successcolor !important;
+    }
+    .one1 {
+        width: 25%;
+        cursor: pointer;
+    }
+    .contOne1 {
+        width: 25%;
+        margin-left: 3%;
+    }
+    .one2 {
+        width: 15%;
+    }
+    .navOne2 {
+        width: 18%;
+    }
+    .one3 {
+        width: 20%;
+    }
+    .one4 {
+        width: 10%;
+    }
+    .one5 {
+        width: 10%;
+        img{
+            width:16px;
+            height:16px;
+        }
+    }
+    .one6 {
+        width: 15%;
+        // position: relative;
+        // top: -9px;
+    }
+}
